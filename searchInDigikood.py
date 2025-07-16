@@ -74,7 +74,6 @@ class SearchInDigikood:
 
         await self.page.goto(url,timeout=TIMEOUT)
         print("here we're in the specific fertilizer category page")
-        await self.page.goto(url,timeout=TIMEOUT)
 
         # Assumes you're already on a fertilizer page like: https://www.digikood.com/product-category/%DA%A9%D9%88%D8%AF-%D9%87%D8%A7%DB%8C-%DA%AF%D9%88%DA%AF%D8%B1%D8%AF%DB%8C/?per_page=3000
         product_blocks = await self.page.query_selector_all("div.product-element-bottom")
@@ -113,18 +112,21 @@ category: {category}
 
 
     async def get_price_per_kg(self,productUrl,category,product_name) -> dict[str,float|str] | None:
+        is_product_available = True
         try:
             await self.page.goto(productUrl,timeout=TIMEOUT)
 
-            # product_name = await self.page.query_selector("div.pb-center-column.col-xs-12.col-sm-12.col-md-7.col-lg-6")
-            # # Now query the h1 within that container
-            # h1_element = await product_name.query_selector('h1[itemprop="name"]')
-            # if h1_element:
-            #     name_text = await h1_element.inner_text()
-            #     print(f"Product Name: {name_text.strip()}")
-            # else:
-            #     print("❌ h1 tag not found inside the container")
 
+
+            # Find the locator for the span inside the 'out of stock' paragraph
+            out_of_stock_span = self.page.locator("p.stock.out-of-stock.wd-style-with-bg span")
+            # Check if the element exists
+            if await out_of_stock_span.count() > 0:
+                exist_text = await (out_of_stock_span.first).inner_text()
+                print(exist_text)  # e.g., "ناموجود"
+                is_product_available = False
+
+            
 
             # Select <p class="unit-price"> which includes both price and weight
             priceClass = self.page.locator("p.price")
@@ -137,6 +139,7 @@ category: {category}
             full_text = await(unit_price_paragraph).inner_text()
             digits_only = re.sub(r"[^\d]", "", full_text)   # → "1775000"
             price = int(digits_only)
+
 
             unit_kg_locator = await self.page.query_selector("td.woocommerce-product-attributes-item__value")
             print(unit_kg_locator)
@@ -152,8 +155,11 @@ category: {category}
             m = re.search(r"([\d,]+)", unit_kg_text.translate(PERSIAN_TO_LATIN))
             kg = int(m.group(1).replace(",", "")) if m else None
 
+            price_per_kg = 0
+
             # Final calculation
             if (kg > 0) : price_per_kg = price / kg
+            else: price_per_kg = "nan"
 
             # If Price wasn't logical
 
@@ -166,13 +172,18 @@ category: {category}
     total price: {price}
     price/kg: {price_per_kg}
 url: {productUrl}
+amount_kg:{kg},
+"is_available":{is_product_available}
     """)
             return {
                 "name":product_name,
                 "price":price,
                 "price_per_kg":price_per_kg,
                     "category":category,
-                    "url":productUrl}
+                    "url":productUrl,
+                    "amount_kg":kg,
+                    "is_available":is_product_available
+                    }
 
         except Exception as e:
             print(f"❌ Error parsing price per kg: {traceback.format_exc()}")

@@ -65,69 +65,57 @@ class PriceBook:
         for r in rows:
             self.upsert(r)
 
-    @staticmethod
-    def _domain_from_url(url: str) -> str:
-        ext = tldextract.extract(url)
-        return ".".join(part for part in [ext.domain, ext.suffix] if part)
-
-
     def save(self, path: str | None = None) -> None:
         from openpyxl import load_workbook
-        from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 
         outfile = path or self.path
-
-        # Step 1: Write data to Excel
         with pd.ExcelWriter(outfile, engine="openpyxl", mode="w") as writer:
             for sheet_name, df in self.sheets.items():
                 df["price"] = df["price"].astype(str)
                 df["price_per_kg"] = df["price_per_kg"].astype(str)
                 df.to_excel(writer, sheet_name=sheet_name[:31], index=False)
 
-        # Step 2: Load workbook to style
+        # Apply styling
         wb = load_workbook(outfile)
 
-        # Styling objects
-        header_fill = PatternFill(start_color="FFD966", end_color="FFD966", fill_type="solid")
+        header_fill = PatternFill(start_color="D9E1F2", end_color="D9E1F2", fill_type="solid")
         alt_fill = PatternFill(start_color="F7F7F7", end_color="F7F7F7", fill_type="solid")
         border = Border(
-            left=Side(style='thin'), right=Side(style='thin'),
-            top=Side(style='thin'), bottom=Side(style='thin')
+            left=Side(style='thin'),
+            right=Side(style='thin'),
+            top=Side(style='thin'),
+            bottom=Side(style='thin')
         )
-        center = Alignment(horizontal="center", vertical="center", wrap_text=True)
 
         for sheet in wb.worksheets:
             max_row = sheet.max_row
-            max_col = sheet.max_column
-
-            # ✅ Freeze top row
-            sheet.freeze_panes = "A2"
 
             for col_idx, column_cells in enumerate(sheet.columns, 1):
                 max_length = max((len(str(cell.value)) if cell.value else 0) for cell in column_cells)
-                adjusted_width = min(30, max(12, max_length + 2))  # 👈 cap width at 30
+                adjusted_width = max(14, min(50, max_length + 2))
                 col_letter = get_column_letter(col_idx)
                 sheet.column_dimensions[col_letter].width = adjusted_width
 
-            # ✅ Style headers
+            # Header styling
             for cell in sheet[1]:
-                cell.font = Font(bold=True, name="Calibri")
-                cell.alignment = center
+                cell.font = Font(bold=True, color="000000")
+                cell.alignment = Alignment(horizontal="center")
                 cell.fill = header_fill
                 cell.border = border
 
-            # ✅ Style data rows
-            for row in sheet.iter_rows(min_row=2, max_row=max_row, max_col=max_col):
-                is_even_row = row[0].row % 2 == 0
-                for idx, cell in enumerate(row):
-                    cell.alignment = center
+            # Data row styling
+            for row in sheet.iter_rows(min_row=2, max_row=max_row):
+                for cell in row:
+                    cell.alignment = Alignment(horizontal="left")
                     cell.border = border
-                    if is_even_row:
+                if row[0].row % 2 == 0:
+                    for cell in row:
                         cell.fill = alt_fill
-                    # Make URL clickable (column 1)
-                    if idx == 0 and isinstance(cell.value, str) and cell.value.startswith("http"):
-                        cell.hyperlink = cell.value
-                        cell.font = Font(color="0563C1", underline="single")
 
         wb.save(outfile)
         print(f"✅ Saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}")
+
+    @staticmethod
+    def _domain_from_url(url: str) -> str:
+        ext = tldextract.extract(url)
+        return ".".join(part for part in [ext.domain, ext.suffix] if part)

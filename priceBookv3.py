@@ -65,69 +65,63 @@ class PriceBook:
         for r in rows:
             self.upsert(r)
 
-    @staticmethod
-    def _domain_from_url(url: str) -> str:
-        ext = tldextract.extract(url)
-        return ".".join(part for part in [ext.domain, ext.suffix] if part)
-
-
     def save(self, path: str | None = None) -> None:
         from openpyxl import load_workbook
-        from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 
         outfile = path or self.path
-
-        # Step 1: Write data to Excel
         with pd.ExcelWriter(outfile, engine="openpyxl", mode="w") as writer:
             for sheet_name, df in self.sheets.items():
                 df["price"] = df["price"].astype(str)
                 df["price_per_kg"] = df["price_per_kg"].astype(str)
                 df.to_excel(writer, sheet_name=sheet_name[:31], index=False)
 
-        # Step 2: Load workbook to style
+        # Apply modern Excel styles
+        from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
+        from openpyxl.utils import get_column_letter
         wb = load_workbook(outfile)
 
-        # Styling objects
-        header_fill = PatternFill(start_color="FFD966", end_color="FFD966", fill_type="solid")
-        alt_fill = PatternFill(start_color="F7F7F7", end_color="F7F7F7", fill_type="solid")
+        header_fill = PatternFill(start_color="4F81BD", end_color="4F81BD", fill_type="solid")
+        header_font = Font(bold=True, color="FFFFFF", name="Calibri", size=11)
+        alt_fill = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
+        normal_font = Font(name="Calibri", size=10)
         border = Border(
-            left=Side(style='thin'), right=Side(style='thin'),
-            top=Side(style='thin'), bottom=Side(style='thin')
+            left=Side(style='thin', color='BFBFBF'),
+            right=Side(style='thin', color='BFBFBF'),
+            top=Side(style='thin', color='BFBFBF'),
+            bottom=Side(style='thin', color='BFBFBF')
         )
-        center = Alignment(horizontal="center", vertical="center", wrap_text=True)
 
         for sheet in wb.worksheets:
             max_row = sheet.max_row
             max_col = sheet.max_column
 
-            # ✅ Freeze top row
-            sheet.freeze_panes = "A2"
-
-            for col_idx, column_cells in enumerate(sheet.columns, 1):
-                max_length = max((len(str(cell.value)) if cell.value else 0) for cell in column_cells)
-                adjusted_width = min(30, max(12, max_length + 2))  # 👈 cap width at 30
+            for col_idx in range(1, max_col + 1):
                 col_letter = get_column_letter(col_idx)
-                sheet.column_dimensions[col_letter].width = adjusted_width
+                max_len = max(len(str(sheet.cell(row=r, column=col_idx).value or "")) for r in range(1, max_row + 1))
+                sheet.column_dimensions[col_letter].width = max(14, min(50, max_len + 2))
 
-            # ✅ Style headers
             for cell in sheet[1]:
-                cell.font = Font(bold=True, name="Calibri")
-                cell.alignment = center
+                cell.font = header_font
                 cell.fill = header_fill
+                cell.alignment = Alignment(horizontal="center", vertical="center")
                 cell.border = border
 
-            # ✅ Style data rows
-            for row in sheet.iter_rows(min_row=2, max_row=max_row, max_col=max_col):
-                is_even_row = row[0].row % 2 == 0
-                for idx, cell in enumerate(row):
-                    cell.alignment = center
+            for row in sheet.iter_rows(min_row=2, max_row=max_row):
+                is_even = row[0].row % 2 == 0
+                for cell in row:
+                    cell.font = normal_font
+                    cell.alignment = Alignment(horizontal="left", vertical="center")
+                    cell.fill = alt_fill if is_even else PatternFill(fill_type=None)
                     cell.border = border
-                    if is_even_row:
-                        cell.fill = alt_fill
-                    # Make URL clickable (column 1)
-                    if idx == 0 and isinstance(cell.value, str) and cell.value.startswith("http"):
-                        cell.hyperlink = cell.value
-                        cell.font = Font(color="0563C1", underline="single")
+
+            sheet.freeze_panes = "A2"
+            sheet.auto_filter.ref = sheet.dimensions
 
         wb.save(outfile)
-        print(f"✅ Saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}")
+        print(f"✅ Modernized and saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}")
+
+
+    @staticmethod
+    def _domain_from_url(url: str) -> str:
+        ext = tldextract.extract(url)
+        return ".".join(part for part in [ext.domain, ext.suffix] if part)
