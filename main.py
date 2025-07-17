@@ -11,11 +11,15 @@ async def main():
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
 
-        #await SearchInTorob(page).get_all_prices()
+        await SearchInTorob(page).get_all_prices()
 
-        await SearchInDigikood(page).get_all_prices()
-        await SearchInKoodforosh(page).get_all_prices()
-        await SearchInDigikoud(page).get_all_prices()
+
+        # await SearchInDigikood(page).get_all_prices()
+        # await SearchInKoodforosh(page).get_all_prices()
+        # await SearchInDigikoud(page).get_all_prices()
+
+
+        input("waiting")
         
 
 asyncio.run(main())

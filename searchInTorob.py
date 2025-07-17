@@ -10,9 +10,31 @@ from priceBook import PriceBook
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 BLACK_LIST_PRODUCTS = [
-    ""
+    
 ]
 TIMEOUT = 4500000
+
+# Persian and English digits mapping
+PERSIAN_DIGITS = "۰۱۲۳۴۵۶۷۸۹"
+ENGLISH_DIGITS = "0123456789"
+PERSIAN_TO_ENGLISH = str.maketrans("".join(PERSIAN_DIGITS), "".join(ENGLISH_DIGITS))
+
+
+# Unit keywords to look for
+UNIT_KEYWORDS = [
+    "لیتر", "لیتری",
+    "کیلوگرم", "کیلو", "کیلوئی", "کیلویی", "کیلوگرمی"
+]
+
+# Build regex pattern dynamically
+unit_pattern = "|".join(UNIT_KEYWORDS)
+pattern = re.compile(rf"(\d+|[۰-۹]+)\s*({unit_pattern})")
+
+
+
+
+
+
 
 class SearchInTorob:
     def __init__(self, page: Page):
@@ -109,34 +131,36 @@ class SearchInTorob:
                 if product_name in BLACK_LIST_PRODUCTS:
                     continue
 
+                amount_kg = 'nan'
+                # get kg from name of the product
+                amount_kg_list:list = await self.extract_amount(product_name)
+                if (len(amount_kg_list) > 0): amount_kg = int(amount_kg_list[0][0])
+
                 product_price = await block.locator("div.ProductCard_desktop_product-price-text__y20OV").inner_text()
 
                 digits_only = re.sub(r"[^\d]", "", product_price)   # → "1775000"
-                price = int(digits_only)
+                pure_price_int = int(digits_only)
 
                 is_available = False
-                if price > 0: is_available = True
+                if pure_price_int > 0: is_available = True
+
                 
+                if(amount_kg > 0):
+                    price_per_kg = pure_price_int/amount_kg
+                else:
+                    price_per_kg = "nan"
 
-
-                # # Get the <a> with class "product-name"
-                # name_el = await block.query_selector("h2.ProductCard_desktop_product-name__JwqeK")
-                # name = await name_el.inner_text()
-                # href = await (await name_el.query_selector("a")).get_attribute("href")
-
-                # # Get the price
-                # price_el = await block.query_selector("span.woocommerce-Price-amount")
-                # price = await price_el.inner_text() if price_el else "N/A"
+                
 
 
                 product_detail_dictionary = {
                     "name": product_name,
-                    "price": product_price,
+                    "price": pure_price_int,
                     "url": href,
                     "category":category,
                     "is_available": is_available,
-                    "amount_kg":"nan",
-                    "price_per_kg":"nan"
+                    "amount_kg":amount_kg,
+                    "price_per_kg":price_per_kg
                 }
                 products.append(product_detail_dictionary)
 
@@ -153,57 +177,34 @@ class SearchInTorob:
         return products
 
 
-    async def get_price_per_kg(self,productUrl,product_price,product_name) -> dict[str,float|str] | None:
+    async def get_price_per_kg(self,product_dict) -> dict[str,float|str] | None:
         is_product_available = True
         try:
-            await self.page.goto(productUrl,timeout=TIMEOUT)
+
+            if((product_dict["amount_kg"] not in ["nan",None,-1,"None"]) and (product_dict["amount_kg"] > 0) ):
+                # If product's kg is already found by its name just return
+                return product_dict
+            
+            await self.page.goto(product_dict["url"],timeout=TIMEOUT)
+
+            unit_kg_locators = await self.page.locator("div.jsx-d9bfdb7eefd5a6bf.detail-value").all()
+
+            for unit_kg_locator in unit_kg_locators:
+                amount_kg_str = await unit_kg_locator.inner_text()
+
+                
+                amount_kg = 0
+                # get kg from name of the product
+                amount_kg_list:list = await self.extract_amount(amount_kg_str)
+                if (len(amount_kg_list) > 0): amount_kg = int(amount_kg_list[0][0])
+
+                if(amount_kg > 0):
+                    print(amount_kg_str)
+                    product_dict["price_per_kg"] = int(product_dict["price"])/amount_kg
+                    return product_dict
 
 
-            unit_kg_locator = await self.page.query_selector("td.woocommerce-product-attributes-item__value")
-
-
-            print(unit_kg_locator)
-
-            # 1) get the visible text
-            unit_kg_text = await unit_kg_locator.inner_text()            # now it's a str
-
-            # 2) normalise Persian/Arabic digits → Latin digits
-            unit_kg_text = unit_kg_text.translate(PERSIAN_TO_LATIN)
-
-            # raw_price sample: "قیمت : ۹۹,۰۰۰ تومان"
-            # 1) keep only the first group of digits with comma separators
-            m = re.search(r"([\d,]+)", unit_kg_text.translate(PERSIAN_TO_LATIN))
-            kg = int(m.group(1).replace(",", "")) if m else None
-
-            price_per_kg = 0
-
-            # Final calculation
-            if (kg > 0) : price_per_kg = product_price / kg
-            else: price_per_kg = "nan"
-
-            # If Price wasn't logical
-
-            if(product_price <= 0):
-                product_price = "nan"
-                price_per_kg = "nan"
-
-            print(f"""
-    name: {product_name}
-    price: {product_price}
-    price_per_kg: {price_per_kg}
-url: {productUrl}
-amount_kg:{kg},
-"is_available":{is_product_available}
-    """)
-            return {
-                "name":product_name,
-                "price":product_price,
-                "price_per_kg":price_per_kg,
-                    "category":"nan",
-                    "url":productUrl,
-                    "amount_kg":kg,
-                    "is_available":is_product_available
-                    }
+            return product_dict
 
         except Exception as e:
             print(f"❌ Error parsing price per kg: {traceback.format_exc()}")
@@ -211,7 +212,17 @@ amount_kg:{kg},
 
 
     async def get_all_prices(self):
-        return await self.extract_products_from_specific_fertilizer_category_page()
+
+        finalProductsList = []
+
+        raw_products = await self.extract_products_from_specific_fertilizer_category_page()
+        for i in range(len(raw_products)):
+            print(f"""{i}/{len(raw_products)}""")
+            rawProduct = raw_products[i]
+            finalProduct = await self.get_price_per_kg(rawProduct)
+            finalProductsList.append(finalProduct)
+
+        return finalProductsList
     
         
     async def auto_scroll_to_bottom(self, wait_time: int = 2000, scroll_pause: int = 1000):
@@ -239,3 +250,14 @@ amount_kg:{kg},
             # Scroll to the bottom
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await self.page.wait_for_timeout(scroll_pause)
+
+    async def extract_amount(self, text: str) -> list[tuple[str, str]]:
+        matches = pattern.findall(text)
+        result = []
+
+        for number, unit in matches:
+            # Convert Persian to English digits
+            normalized_number = number.translate(PERSIAN_TO_ENGLISH)
+            result.append((normalized_number, unit))
+
+        return result
