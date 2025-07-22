@@ -125,7 +125,7 @@ class SearchInTorob:
                 if product_name in BLACK_LIST_PRODUCTS:
                     continue
 
-                amount_kg = "nan"
+                amount_kg = 0
                 # get kg from name of the product
                 amount_kg_list: list = await self.extract_amount(product_name)
                 if len(amount_kg_list) > 0:
@@ -146,6 +146,7 @@ class SearchInTorob:
                     price_per_kg = pure_price_int / amount_kg
                 else:
                     price_per_kg = "nan"
+                    amount_kg = "nan"
 
                 product_detail_dictionary = {
                     "name": product_name,

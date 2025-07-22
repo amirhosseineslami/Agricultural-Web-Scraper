@@ -5,22 +5,20 @@ from searchInKoodforosh import SearchInKoodforosh
 from priceBook import PriceBook
 from searchInDigikood import SearchInDigikood
 from searchInTorob import SearchInTorob
-            
+from searchInAgriplus import SearchInAgriplus
+
+
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
 
         await SearchInTorob(page).get_all_prices()
+        await SearchInDigikood(page).get_all_prices()
+        await SearchInKoodforosh(page).get_all_prices()
+        await SearchInDigikoud(page).get_all_prices()
 
+        await SearchInAgriplus(page).get_all_prices()
 
-        # await SearchInDigikood(page).get_all_prices()
-        # await SearchInKoodforosh(page).get_all_prices()
-        # await SearchInDigikoud(page).get_all_prices()
-
-
-        input("waiting")
-        
 
 asyncio.run(main())
-
