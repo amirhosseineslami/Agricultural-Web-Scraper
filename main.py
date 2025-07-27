@@ -6,6 +6,7 @@ from priceBook import PriceBook
 from searchInDigikood import SearchInDigikood
 from searchInTorob import SearchInTorob
 from searchInAgriplus import SearchInAgriplus
+from searchInSepahankesht import SearchInSepahankesht
 
 
 async def main():
@@ -17,8 +18,9 @@ async def main():
         await SearchInDigikood(page).get_all_prices()
         await SearchInKoodforosh(page).get_all_prices()
         await SearchInDigikoud(page).get_all_prices()
-
         await SearchInAgriplus(page).get_all_prices()
+        await SearchInSepahankesht(page=page).get_all_prices()
+        input()
 
 
 asyncio.run(main())
