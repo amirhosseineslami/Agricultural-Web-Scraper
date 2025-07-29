@@ -8,6 +8,7 @@ from searchInTorob import SearchInTorob
 from searchInAgriplus import SearchInAgriplus
 from searchInSepahankesht import SearchInSepahankesht
 from searchInRoyalkesht import SearchInRoyalkesht
+from searchInBasalam import SearchInBasalam
 
 
 async def main():
@@ -21,9 +22,10 @@ async def main():
         # await SearchInDigikoud(page).get_all_prices()
         # await SearchInAgriplus(page).get_all_prices()
         # await SearchInSepahankesht(page=page).get_all_prices()
-        await SearchInRoyalkesht(page=page).get_all_prices()
+        # await SearchInRoyalkesht(page=page).get_all_prices()
+        await SearchInBasalam(page=page).get_all_prices()
 
-        input()
+        input("Finished")
 
 
 asyncio.run(main())

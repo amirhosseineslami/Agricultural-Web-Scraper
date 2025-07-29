@@ -143,80 +143,63 @@ class SearchInRoyalkesht:
 
         print("here we're in the specific fertilizer category page")
 
-        while True:
-            # Assumes you're already on a fertilizer page
-            product_blocks = await self.page.locator(
-                "div.sub-hero-list.m-flex-column.mt-5 >> div"
-            ).all()
-            print(product_blocks)
+        # Assumes you're already on a fertilizer page
+        firstblock = self.page.locator("section.d-flex.flex-column.align-items-top")
 
-            products = []
+        product_blocks = await firstblock.locator(
+            "div.sub-hero-list.m-flex-column.mt-5 >> div"
+        ).all()
+        print(product_blocks)
 
-            for block in product_blocks:
-                try:
-                    # Get the <a> with class "product-name"
-                    name_el = block.locator("h4")
-                    name = await name_el.inner_text()
-                    href = (
-                        await block.locator("div.more.text-center.mt-2")
-                        .locator("a")
-                        .get_attribute("href")
-                    )
+        products = []
 
-                    # Get the price
-                    # Get the price element from the block
-                    price_el = block.locator("span.price")
-
-                    # Check if it exists
-                    if await price_el.count() > 0:
-                        price = await price_el.first.inner_text()
-                    else:
-                        price = "N/A"
-
-                    products.append(
-                        {
-                            "name": name.strip(),
-                            "price": price.strip(),
-                            "price_per_kg": price.strip(),
-                            "url": href,
-                            "category": product_dic["category"],
-                        }
-                    )
-                    print(
-                        f"""
-    name: {name.strip()}
-    price: {price.strip()}
-    url: {href}
-    category: {product_dic["category"]}
-                        """
-                    )
-                except Exception as e:
-                    url = product_dic["url"]
-                    cat = product_dic["category"]
-                    print(
-                        f"{url}{cat}⚠️ Skipping a product due to error: {traceback.format_exc()}"
-                    )
-
-            next_page_locator = self.page.locator("a.next.page-numbers")
-            next_page_text = None
-            next_page_link = None
+        for block in product_blocks:
             try:
-
-                next_page_text = await next_page_locator.inner_text(
+                print(f"{product_blocks.index(block)}th product")
+                # Get the <a> with class "product-name"
+                name_el = block.locator("h4")
+                name = await name_el.inner_text(
                     timeout=TIMEOUT_FOR_FINDING_NEXTPAGE_KEY
                 )
-                next_page_link = await next_page_locator.get_attribute(
-                    "href", timeout=TIMEOUT_FOR_FINDING_NEXTPAGE_KEY
+                href = (
+                    await block.locator("div.more.text-center.mt-2")
+                    .locator("a")
+                    .get_attribute("href")
+                )
+
+                # Get the price
+                # Get the price element from the block
+                price_el = block.locator("span.price")
+
+                # Check if it exists
+                if await price_el.count() > 0:
+                    price = await price_el.first.inner_text()
+                else:
+                    price = "N/A"
+
+                products.append(
+                    {
+                        "name": name.strip(),
+                        "price": price.strip(),
+                        "price_per_kg": price.strip(),
+                        "url": href,
+                        "category": product_dic["category"],
+                    }
+                )
+                print(
+                    f"""
+name: {name.strip()}
+price: {price.strip()}
+url: {href}
+category: {product_dic["category"]}
+                    """
                 )
             except Exception as e:
-                print(f"No next page found!{traceback.format_exc}")
-
-            if next_page_text is not None and next_page_link is not None:
-                print(next_page_link, next_page_text)
-                await self.page.goto(next_page_link, timeout=TIMEOUT)
-
-            else:
-                break
+                url = product_dic["url"]
+                cat = product_dic["category"]
+                print(
+                    f"{url}{cat}⚠️ Skipping a product due to error: {traceback.format_exc()}"
+                )
 
         return products
 
@@ -311,14 +294,14 @@ amount_kg:{kg},
             rawProducts = (
                 await self.extract_products_from_specific_fertilizer_category_page(sort)
             )
+            print("rawproducts", rawProducts)
 
             for rawProduct in rawProducts:
-                fullData = rawProduct
-                finalList.append(fullData)
+                finalList.append(rawProduct)
                 try:
-                    book.upsert(fullData)
+                    book.upsert(rawProduct)
                 except Exception as e:
-                    print(traceback.format_exc)
+                    traceback.print_exc()
 
         return finalList
 

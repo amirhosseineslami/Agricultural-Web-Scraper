@@ -9,7 +9,8 @@ from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 
 
 class PriceBook:
-    DEFAULT_XLSX = "\output\price_of_fertilizers.xlsx"
+    DEFAULT_XLSX = "price_of_fertilizers.xlsx"
+    DEFAULT_XLSX = os.path.join("output", DEFAULT_XLSX)
     DATE_FMT = "%Y-%m-%d %H:%M:%S"
 
     BASE_COLUMNS = [
@@ -44,9 +45,16 @@ class PriceBook:
             self.sheets[domain] = pd.DataFrame(columns=self.BASE_COLUMNS)
 
         df = self.sheets[domain]
-        pk = row["url"]
+
+        # 👇 Use a composite key for uniqueness
+        pk = f"{row['url']}::{row['name']}"
         now = datetime.now().strftime(self.DATE_FMT)
-        mask = df["url"] == pk
+
+        # Add new composite key column if not already present
+        if "_pk" not in df.columns:
+            df["_pk"] = df["url"].astype(str) + "::" + df["name"].astype(str)
+
+        mask = df["_pk"] == pk
 
         if mask.any():
             idx = df.index[mask][0]
@@ -60,6 +68,7 @@ class PriceBook:
                 "amount_kg": row.get("amount_kg", ""),
                 "last_price_update": row.get("last_price_update", ""),
                 "is_available": row.get("is_available", ""),
+                "_pk": pk,  # 👈 Add the composite key
             }
             self.sheets[domain].loc[len(df)] = row
 
