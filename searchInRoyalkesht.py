@@ -201,6 +201,7 @@ class SearchInRoyalkesht:
             next_page_text = None
             next_page_link = None
             try:
+
                 next_page_text = await next_page_locator.inner_text(
                     timeout=TIMEOUT_FOR_FINDING_NEXTPAGE_KEY
                 )
