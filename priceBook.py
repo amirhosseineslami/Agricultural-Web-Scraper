@@ -7,15 +7,22 @@ from typing import Dict, Any, List
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 
+
 class PriceBook:
-    DEFAULT_XLSX = "price_of_fertilizers.xlsx"
+    DEFAULT_XLSX = "\output\price_of_fertilizers.xlsx"
     DATE_FMT = "%Y-%m-%d %H:%M:%S"
 
     BASE_COLUMNS = [
-        "url", "name", "category",
-        "price", "price_per_kg",
-        "amount_kg", "last_price_update", "is_available",
-        "created_at", "last_updated",
+        "url",
+        "name",
+        "category",
+        "price",
+        "price_per_kg",
+        "amount_kg",
+        "last_price_update",
+        "is_available",
+        "created_at",
+        "last_updated",
     ]
 
     def __init__(self, path: str | None = None):
@@ -24,10 +31,7 @@ class PriceBook:
 
         if os.path.exists(self.path):
             self.sheets = pd.read_excel(
-                self.path,
-                sheet_name=None,
-                engine="openpyxl",
-                dtype=str
+                self.path, sheet_name=None, engine="openpyxl", dtype=str
             )
             for k, df in self.sheets.items():
                 self.sheets[k] = df.reindex(columns=self.BASE_COLUMNS)
@@ -55,7 +59,7 @@ class PriceBook:
                 "last_updated": now,
                 "amount_kg": row.get("amount_kg", ""),
                 "last_price_update": row.get("last_price_update", ""),
-                "is_available": row.get("is_available", "")
+                "is_available": row.get("is_available", ""),
             }
             self.sheets[domain].loc[len(df)] = row
 
@@ -69,7 +73,6 @@ class PriceBook:
     def _domain_from_url(url: str) -> str:
         ext = tldextract.extract(url)
         return ".".join(part for part in [ext.domain, ext.suffix] if part)
-
 
     def save(self, path: str | None = None) -> None:
         from openpyxl import load_workbook
@@ -88,11 +91,17 @@ class PriceBook:
         wb = load_workbook(outfile)
 
         # Styling objects
-        header_fill = PatternFill(start_color="FFD966", end_color="FFD966", fill_type="solid")
-        alt_fill = PatternFill(start_color="F7F7F7", end_color="F7F7F7", fill_type="solid")
+        header_fill = PatternFill(
+            start_color="FFD966", end_color="FFD966", fill_type="solid"
+        )
+        alt_fill = PatternFill(
+            start_color="F7F7F7", end_color="F7F7F7", fill_type="solid"
+        )
         border = Border(
-            left=Side(style='thin'), right=Side(style='thin'),
-            top=Side(style='thin'), bottom=Side(style='thin')
+            left=Side(style="thin"),
+            right=Side(style="thin"),
+            top=Side(style="thin"),
+            bottom=Side(style="thin"),
         )
         center = Alignment(horizontal="center", vertical="center", wrap_text=True)
 
@@ -104,7 +113,9 @@ class PriceBook:
             sheet.freeze_panes = "A2"
 
             for col_idx, column_cells in enumerate(sheet.columns, 1):
-                max_length = max((len(str(cell.value)) if cell.value else 0) for cell in column_cells)
+                max_length = max(
+                    (len(str(cell.value)) if cell.value else 0) for cell in column_cells
+                )
                 adjusted_width = min(30, max(12, max_length + 2))  # 👈 cap width at 30
                 col_letter = get_column_letter(col_idx)
                 sheet.column_dimensions[col_letter].width = adjusted_width
@@ -125,9 +136,15 @@ class PriceBook:
                     if is_even_row:
                         cell.fill = alt_fill
                     # Make URL clickable (column 1)
-                    if idx == 0 and isinstance(cell.value, str) and cell.value.startswith("http"):
+                    if (
+                        idx == 0
+                        and isinstance(cell.value, str)
+                        and cell.value.startswith("http")
+                    ):
                         cell.hyperlink = cell.value
                         cell.font = Font(color="0563C1", underline="single")
 
         wb.save(outfile)
-        print(f"✅ Saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}")
+        print(
+            f"✅ Saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}"
+        )
