@@ -133,24 +133,30 @@ class SearchInBasalam:
             product_blocks = await self.page.locator("a.EaqW1o.tED1ki._77T3WS").all()
 
             products = []
+            book = PriceBook()
 
             for block in product_blocks:
                 try:
                     # Get the <a> with class "product-name"
                     # name_el = block.locator("h3.wd-entities-title")
-                    name = await block.get_attribute("title")
-                    href = await block.get_attribute("href")
+                    name = await block.locator("h2.Zkctoc.kLgrzf").inner_text()
+                    href = "https://basalam.com" + await block.get_attribute("href")
                     print(name, href)
 
                     # Get the price
                     # Get the price element from the block
                     price_el = block.locator("span.VVeeBY")
+                    price = None
 
-                    # Check if it exists
-                    if await price_el.count() > 0:
-                        price = await price_el.first.inner_text()
-                    else:
-                        price = "N/A"
+                    try:
+                        # Check if it exists
+                        if await price_el.count() > 0:
+                            price = await price_el.first.inner_text()
+                        else:
+                            price = "N/A"
+
+                    except Exception as e:
+                        traceback.print_exc()
 
                     product_dic = {
                         "name": name.strip(),
@@ -159,7 +165,7 @@ class SearchInBasalam:
                         "category": product_dic["category"],
                     }
                     products.append(product_dic)
-                    PriceBook().upsert(product_dic)
+                    book.upsert(product_dic)
                     print(
                         f"""
     name: {name.strip()}
@@ -177,6 +183,8 @@ class SearchInBasalam:
                 "span.bs-pagination__arrow.bs-pagination__arrow--show"
             ).last
             next_page_link = None
+            if await next_page_locator.inner_text() != "بعدی":
+                break
             try:
                 next_page_link = (
                     "https://basalam.com"

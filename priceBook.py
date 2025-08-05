@@ -73,6 +73,7 @@ class PriceBook:
             self.sheets[domain].loc[len(df)] = row
 
         self.save()
+        self.save_csv()
 
     def bulk_upsert(self, rows: List[Dict[str, Any]]):
         for r in rows:
@@ -157,3 +158,18 @@ class PriceBook:
         print(
             f"✅ Saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}"
         )
+
+    def save_csv(self, folder: str = "output_csv") -> None:
+        """
+        Save each domain sheet as a separate CSV file.
+        Files are saved in the specified folder (default 'output_csv').
+        """
+        os.makedirs(folder, exist_ok=True)
+
+        for domain, df in self.sheets.items():
+            # Drop the _pk column if exists before saving CSV
+            df_to_save = df.drop(columns=["_pk"], errors="ignore")
+            csv_path = os.path.join(folder, f"{domain}.csv")
+            df_to_save.to_csv(csv_path, index=False)
+
+        print(f"✅ Saved {len(self.sheets)} CSV files in folder '{folder}'")
