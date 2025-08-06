@@ -40,6 +40,9 @@ class PriceBook:
     def upsert(self, row: Dict[str, Any]) -> None:
         row = {k: str(v) for k, v in row.items()}
         domain = self._domain_from_url(row["url"])
+        if len(domain) < 2:
+            assert Exception("Domain is not available!")
+            return
 
         if domain not in self.sheets:
             self.sheets[domain] = pd.DataFrame(columns=self.BASE_COLUMNS)

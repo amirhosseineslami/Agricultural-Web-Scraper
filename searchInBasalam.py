@@ -7,6 +7,7 @@ import re
 from typing import List, Dict
 import traceback
 from priceBook import PriceBook
+from unitExtractor import UnitExtractor
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 155000
@@ -160,10 +161,25 @@ class SearchInBasalam:
 
                     product_dic = {
                         "name": name.strip(),
-                        "price": price.strip(),
+                        "price": price.strip().replace("٬", ""),
                         "url": href,
                         "category": product_dic["category"],
                     }
+
+                    # 1) get the visible text
+                    kg, unit = await UnitExtractor().extract_amount_and_unit(
+                        product_dic["name"]
+                    )
+                    if kg is not None and int(kg) > 0:
+                        product_dic["amount_kg"] = kg
+                        product_dic["price_per_kg"] = int(product_dic["price"]) / int(
+                            kg
+                        )
+                    else:
+                        product_dic["price_per_kg"] = "nan"
+                        product_dic["amount_kg"] = "nan"
+                        kg = None
+
                     products.append(product_dic)
                     book.upsert(product_dic)
                     print(
@@ -172,6 +188,8 @@ class SearchInBasalam:
     price: {price.strip()}
     url: {href}
     category: {product_dic["category"]}
+    kg: {product_dic["amount_kg"]}
+    price/kg: {product_dic["price_per_kg"]}
                         """
                     )
                 except Exception as e:
@@ -241,7 +259,7 @@ class SearchInBasalam:
             unit_kg_text = None
             try:
                 unit_kg_text = await unit_kg_locator.inner_text()  # now it's a str
-                kg, unit = await self.extract_amount_and_unit(unit_kg_text)
+                kg, unit = await UnitExtractor().extract_amount_and_unit(unit_kg_text)
             except Exception as e:
                 print(traceback.format_exc())
 
@@ -249,7 +267,7 @@ class SearchInBasalam:
             if kg is not None:
                 print(unit_kg_text)
             else:
-                kg, unit = await self.extract_amount_and_unit(product_dic["name"])
+                kg, unit = await unit(product_dic["name"])
                 if kg is not None and int(kg) > 0:
                     product_dic["amount_kg"] = kg
                 else:
@@ -338,37 +356,3 @@ amount_kg:{kg},
             # Scroll to the bottom
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await self.page.wait_for_timeout(scroll_pause)
-
-    # The function
-    async def extract_amount_and_unit(
-        self, text: str
-    ) -> tuple[float | None, str | None]:
-        """
-        Extract and convert any weight or volume unit in Persian/English to kg.
-        Returns (amount_in_kg: float | None, original_unit: str | None)
-        """
-
-        # Normalize Persian digits and decimal points
-        normalized = text.translate(PERSIAN_TO_LATIN).replace(",", "")
-
-        # Match pattern like "5 لیتر", "250گرمی", etc.
-        pattern = rf"(?P<amount>\d+(?:\.\d+)?)\s*(?P<unit>{UNIT_PATTERN})"
-        match = re.search(pattern, normalized, flags=re.IGNORECASE)
-
-        if match:
-            raw_amount = match.group("amount")
-            raw_unit = match.group("unit")
-
-            try:
-                amount = float(raw_amount)
-            except ValueError:
-                return None, None
-
-            conversion_factor = UNIT_KEYWORDS.get(raw_unit.strip(), None)
-            if conversion_factor is None:
-                return None, raw_unit
-
-            amount_in_kg = amount * conversion_factor
-            return amount_in_kg, raw_unit
-
-        return None, None

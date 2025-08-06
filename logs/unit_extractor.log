@@ -1,0 +1,36 @@
+2025-08-06 11:00:08,122 - DEBUG - Using proactor: IocpProactor
+2025-08-06 11:00:10,213 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:10,218 - DEBUG - Attempting to acquire lock 2643501326480 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-06 11:00:10,218 - DEBUG - Lock 2643501326480 acquired on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-06 11:00:10,220 - DEBUG - Attempting to release lock 2643501326480 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-06 11:00:10,222 - DEBUG - Lock 2643501326480 released on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-06 11:00:11,662 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:13,117 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:14,473 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:15,895 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:17,460 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:18,831 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:20,269 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:21,631 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:23,047 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:24,421 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:25,835 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:27,217 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:28,604 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:30,011 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:31,440 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:32,845 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:00:34,505 - ERROR - Future exception was never retrieved
+future: <Future finished exception=BrokenPipeError(32, 'The pipe is being closed', None, 232, None)>
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 397, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 559, in send
+    ov.WriteFile(conn.fileno(), buf)
+BrokenPipeError: [WinError 232] The pipe is being closed
+2025-08-06 11:02:38,642 - DEBUG - Logging configured with 1 handlers: ['RotatingFileHandler']
+2025-08-06 11:02:41,327 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:02:42,854 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:02:44,341 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-06 11:02:45,753 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
