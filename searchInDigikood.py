@@ -7,24 +7,24 @@ import re
 from typing import List, Dict
 import traceback
 from priceBook import PriceBook
+from unitExtractor import UnitExtractor
+from priceExractor import PriceExtractor
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 TIMEOUT = 4500000
+
 
 class SearchInDigikood:
     def __init__(self, page: Page):
         self.page = page
         self.url = "https://digikood.com/"
-        
 
     async def run(self):
         try:
             await self.page.goto(self.url, timeout=TIMEOUT)
             # Adjust the selector based on the site's search input
 
-            
             await asyncio.sleep(60)  # keeps the browser open for 60 seconds
-
 
         except Exception as e:
             print(f"Error searching Digikood: {e}")
@@ -34,7 +34,6 @@ class SearchInDigikood:
 
         await self.page.goto(list_url, timeout=TIMEOUT)
 
-
         selector = "div.hover-mask"
         categories = await self.page.query_selector_all(selector)
         print(categories)
@@ -43,7 +42,9 @@ class SearchInDigikood:
 
         for i in range(11):
             link = categories[i]
-            name = await (await link.query_selector("h3.wd-entities-title")).inner_text()
+            name = await (
+                await link.query_selector("h3.wd-entities-title")
+            ).inner_text()
             url = await (await link.query_selector("a")).get_attribute("href")
 
             # Try to extract count from the <span> inside
@@ -56,27 +57,35 @@ class SearchInDigikood:
                 except:
                     pass  # Ignore parse errors
 
-            result.append({
-                "category": name.strip(),
-                "count": count,
-                "url": url+"?per_page=400/"
-            })
-            
-            print(f"""
+            result.append(
+                {
+                    "category": name.strip(),
+                    "count": count,
+                    "url": url + "?per_page=400/",
+                }
+            )
+
+            print(
+                f"""
                   category:{name.strip()}
                   Url:{url}?per_page=400/
                   Count:{count}
-""")
+"""
+            )
 
         return result
 
-    async def extract_products_from_specific_fertilizer_category_page(self,url:str,category:str) -> list[dict]:
+    async def extract_products_from_specific_fertilizer_category_page(
+        self, url: str, category: str
+    ) -> list[dict]:
 
-        await self.page.goto(url,timeout=TIMEOUT)
+        await self.page.goto(url, timeout=TIMEOUT)
         print("here we're in the specific fertilizer category page")
 
         # Assumes you're already on a fertilizer page like: https://www.digikood.com/product-category/%DA%A9%D9%88%D8%AF-%D9%87%D8%A7%DB%8C-%DA%AF%D9%88%DA%AF%D8%B1%D8%AF%DB%8C/?per_page=3000
-        product_blocks = await self.page.query_selector_all("div.product-element-bottom")
+        product_blocks = await self.page.query_selector_all(
+            "div.product-element-bottom"
+        )
 
         products = []
 
@@ -91,99 +100,100 @@ class SearchInDigikood:
                 price_el = await block.query_selector("span.woocommerce-Price-amount")
                 price = await price_el.inner_text() if price_el else "N/A"
 
-                products.append({
-                    "name": name.strip(),
-                    "price": price.strip(),
-                    "url": href,
-                    "category":category
-                })
-                print(f"""
+                products.append(
+                    {
+                        "name": name.strip(),
+                        "price": price.strip(),
+                        "url": href,
+                        "category": category,
+                    }
+                )
+                print(
+                    f"""
 name: {name.strip()}
 price: {price.strip()}
 url: {href}
 category: {category}
-                      """)
+                      """
+                )
             except Exception as e:
                 print(f"⚠️ Skipping a product due to error: {traceback}")
 
-        
-
         return products
 
-
-    async def get_price_per_kg(self,productUrl,category,product_name) -> dict[str,float|str] | None:
+    async def get_price_per_kg(
+        self, productUrl, category, product_name
+    ) -> dict[str, float | str] | None:
         is_product_available = True
         try:
-            await self.page.goto(productUrl,timeout=TIMEOUT)
-
-
+            await self.page.goto(productUrl, timeout=TIMEOUT)
 
             # Find the locator for the span inside the 'out of stock' paragraph
-            out_of_stock_span = self.page.locator("p.stock.out-of-stock.wd-style-with-bg span")
+            out_of_stock_span = self.page.locator(
+                "p.stock.out-of-stock.wd-style-with-bg span"
+            )
             # Check if the element exists
             if await out_of_stock_span.count() > 0:
-                exist_text = await (out_of_stock_span.first).inner_text()
+                exist_text = await out_of_stock_span.first.inner_text()
                 print(exist_text)  # e.g., "ناموجود"
                 is_product_available = False
 
-            
-
             # Select <p class="unit-price"> which includes both price and weight
             priceClass = self.page.locator("p.price")
-            unit_price_paragraph = priceClass.locator("span.woocommerce-Price-amount bdi").first
+            unit_price_paragraph = priceClass.locator(
+                "span.woocommerce-Price-amount bdi"
+            ).first
             if not unit_price_paragraph:
                 print("⚠️ No unit-price block found.")
                 price = 0
-            
 
-            full_text = await(unit_price_paragraph).inner_text()
-            digits_only = re.sub(r"[^\d]", "", full_text)   # → "1775000"
+            full_text = await unit_price_paragraph.inner_text()
+            digits_only = re.sub(r"[^\d]", "", full_text)  # → "1775000"
             price = int(digits_only)
 
-
-            unit_kg_locator = await self.page.query_selector("td.woocommerce-product-attributes-item__value")
+            unit_kg_locator = await self.page.query_selector(
+                "td.woocommerce-product-attributes-item__value"
+            )
             print(unit_kg_locator)
 
             # 1) get the visible text
-            unit_kg_text = await unit_kg_locator.inner_text()            # now it's a str
-
-            # 2) normalise Persian/Arabic digits → Latin digits
-            unit_kg_text = unit_kg_text.translate(PERSIAN_TO_LATIN)
-
-            # raw_price sample: "قیمت : ۹۹,۰۰۰ تومان"
-            # 1) keep only the first group of digits with comma separators
-            m = re.search(r"([\d,]+)", unit_kg_text.translate(PERSIAN_TO_LATIN))
-            kg = int(m.group(1).replace(",", "")) if m else None
-
+            unit_kg_text = await unit_kg_locator.inner_text()
+            kg = UnitExtractor().extract_amount_and_unit(unit_kg_text)
             price_per_kg = 0
 
             # Final calculation
-            if (kg > 0) : price_per_kg = price / kg
-            else: price_per_kg = "nan"
+            if kg > 0:
+                price_per_kg = price / kg
+            else:
+                price_per_kg = "nan"
 
             # If Price wasn't logical
 
-            if(price <= 0):
+            if price <= 0:
                 price = "nan"
                 price_per_kg = "nan"
 
-            print(f"""
+            print(
+                f"""
     name: {product_name}
     total price: {price}
     price/kg: {price_per_kg}
 url: {productUrl}
 amount_kg:{kg},
 "is_available":{is_product_available}
-    """)
+    """
+            )
             return {
-                "name":product_name,
-                "price":price,
-                "price_per_kg":price_per_kg,
-                    "category":category,
-                    "url":productUrl,
-                    "amount_kg":kg,
-                    "is_available":is_product_available
-                    }
+                "name": product_name,
+                "price": PriceExtractor().extract_price_and_currency(price),
+                "price_per_kg": PriceExtractor().extract_price_and_currency(
+                    price_per_kg
+                ),
+                "category": category,
+                "url": productUrl,
+                "amount_kg": kg,
+                "is_available": is_product_available,
+            }
 
         except Exception as e:
             print(f"❌ Error parsing price per kg: {traceback.format_exc()}")
@@ -195,10 +205,16 @@ amount_kg:{kg},
 
         listOfSorts = await self.getListOfFertilizerCategories()
         for sort in listOfSorts:
-            rawProducts = await self.extract_products_from_specific_fertilizer_category_page(sort["url"],sort["category"])
+            rawProducts = (
+                await self.extract_products_from_specific_fertilizer_category_page(
+                    sort["url"], sort["category"]
+                )
+            )
 
             for rawProduct in rawProducts:
-                fullData = await self.get_price_per_kg(rawProduct["url"],rawProduct["category"],rawProduct["name"])
+                fullData = await self.get_price_per_kg(
+                    rawProduct["url"], rawProduct["category"], rawProduct["name"]
+                )
                 finalList.append(fullData)
                 try:
                     book.upsert(fullData)

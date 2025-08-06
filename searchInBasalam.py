@@ -8,6 +8,7 @@ from typing import List, Dict
 import traceback
 from priceBook import PriceBook
 from unitExtractor import UnitExtractor
+from priceExractor import PriceExtractor
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 155000
@@ -161,7 +162,8 @@ class SearchInBasalam:
 
                     product_dic = {
                         "name": name.strip(),
-                        "price": price.strip().replace("٬", ""),
+                        "price": 10
+                        * PriceExtractor().extract_price_and_currency(price.strip()),
                         "url": href,
                         "category": product_dic["category"],
                     }
@@ -185,7 +187,7 @@ class SearchInBasalam:
                     print(
                         f"""
     name: {name.strip()}
-    price: {price.strip()}
+    price: {PriceExtractor().extract_price_and_currency(price.strip())}
     url: {href}
     category: {product_dic["category"]}
     kg: {product_dic["amount_kg"]}
@@ -291,7 +293,7 @@ class SearchInBasalam:
             print(
                 f"""
     name: {product_dic["name"]}
-    total price: {price}
+    total price: {PriceExtractor().extract_price_and_currency(price)}
     price/kg: {price_per_kg}
 url: {product_dic["url"]}
 amount_kg:{kg},

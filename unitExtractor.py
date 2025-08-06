@@ -6,12 +6,18 @@ from decimal import Decimal, InvalidOperation
 from collections import OrderedDict
 import asyncio
 
-# Configure logging for detailed debugging
+import logging
+
+# configure only a file handler
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("unit_extractor.log")],
+    handlers=[logging.FileHandler("unit_extractor.log", encoding="utf-8")],
 )
+
+# Use logger as usual
 logger = logging.getLogger(__name__)
 
 # Comprehensive mapping of units to kilogram conversion factors

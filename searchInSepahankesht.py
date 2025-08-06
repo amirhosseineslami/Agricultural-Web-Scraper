@@ -7,6 +7,8 @@ import re
 from typing import List, Dict
 import traceback
 from priceBook import PriceBook
+from unitExtractor import UnitExtractor
+from priceExractor import PriceExtractor
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 1000
@@ -223,7 +225,7 @@ class SearchInSepahankesht:
             unit_kg_text = None
             try:
                 unit_kg_text = await unit_kg_locator.inner_text()  # now it's a str
-                kg, unit = await self.extract_amount_and_unit(unit_kg_text)
+                kg, unit = await UnitExtractor().extract_amount_and_unit(unit_kg_text)
             except Exception as e:
                 print(traceback.format_exc())
 
@@ -231,7 +233,9 @@ class SearchInSepahankesht:
             if kg is not None:
                 print(unit_kg_text)
             else:
-                kg, unit = await self.extract_amount_and_unit(product_dic["name"])
+                kg, unit = await UnitExtractor().extract_amount_and_unit(
+                    product_dic["name"]
+                )
                 if kg is not None and int(kg) > 0:
                     product_dic["amount_kg"] = kg
                 else:
@@ -262,8 +266,10 @@ amount_kg:{kg},
 "is_available":{is_product_available}
     """
             )
-            product_dic["price_per_kg"] = price_per_kg
-            product_dic["price"] = price
+            product_dic["price_per_kg"] = PriceExtractor().extract_price_and_currency(
+                price_per_kg
+            )
+            product_dic["price"] = PriceExtractor().extract_price_and_currency(price)
             product_dic["amount_kg"] = kg
             product_dic["is_available"] = is_product_available
             return product_dic
@@ -321,27 +327,3 @@ amount_kg:{kg},
             # Scroll to the bottom
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await self.page.wait_for_timeout(scroll_pause)
-
-    async def extract_amount_and_unit(
-        self, text: str
-    ) -> tuple[float | None, str | None]:
-        """
-        Extract number and unit from Persian product text.
-        Returns (amount: float | None, unit: str | None)
-        """
-
-        # Step 1: Normalize digits first!
-        normalized = text.translate(PERSIAN_TO_LATIN)
-
-        # Step 2: Create a regex pattern like: "5 لیتر", "5لیتر", "250 گرمی", etc.
-        unit_pattern = "|".join(re.escape(unit) for unit in UNIT_KEYWORDS.keys())
-        pattern = rf"(\d+(?:\.\d+)?)\s*({unit_pattern})"
-
-        match = re.search(pattern, normalized, flags=re.IGNORECASE)
-
-        if match:
-            amount = float(match.group(1))
-            unit = UNIT_KEYWORDS.get(match.group(2), match.group(2))
-            return amount, unit
-
-        return None, None

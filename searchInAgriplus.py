@@ -7,6 +7,8 @@ import re
 from typing import List, Dict
 import traceback
 from priceBook import PriceBook
+from unitExtractor import UnitExtractor
+from priceExractor import PriceExtractor
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 TIMEOUT = 4500000
@@ -160,9 +162,7 @@ category: {product_dic["category"]}
 
             # raw_price sample: "قیمت : ۹۹,۰۰۰ تومان"
             # 1) keep only the first group of digits with comma separators
-            m = re.search(r"([\d,]+)", unit_kg_text.translate(PERSIAN_TO_LATIN))
-            kg = int(m.group(1).replace(",", "")) if m else None
-
+            kg = UnitExtractor().extract_amount_and_unit(unit_kg_text)
             price_per_kg = 0
 
             # Final calculation
@@ -180,15 +180,17 @@ category: {product_dic["category"]}
             print(
                 f"""
     name: {product_dic["name"]}
-    total price: {price}
+    total price: {PriceExtractor().extract_price_and_currency(price)}
     price/kg: {price_per_kg}
 url: {product_dic["url"]}
 amount_kg:{kg},
 "is_available":{is_product_available}
     """
             )
-            product_dic["price_per_kg"] = price_per_kg
-            product_dic["price"] = price
+            product_dic["price_per_kg"] = PriceExtractor().extract_price_and_currency(
+                price_per_kg
+            )
+            product_dic["price"] = PriceExtractor().extract_price_and_currency(price)
             product_dic["amount_kg"] = kg
             product_dic["is_available"] = is_product_available
             return product_dic
