@@ -185,7 +185,7 @@ amount_kg:{kg},
             )
             return {
                 "name": product_name,
-                "price": PriceExtractor().extract_price_and_currency(price),
+                "price": price,
                 "price_per_kg": PriceExtractor().extract_price_and_currency(
                     price_per_kg
                 ),

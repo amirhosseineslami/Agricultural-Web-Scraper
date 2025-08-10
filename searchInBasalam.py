@@ -154,6 +154,7 @@ class SearchInBasalam:
                         # Check if it exists
                         if await price_el.count() > 0:
                             price = await price_el.first.inner_text()
+
                         else:
                             price = "N/A"
 
@@ -162,10 +163,9 @@ class SearchInBasalam:
 
                     product_dic = {
                         "name": name.strip(),
-                        "price": 10
-                        * PriceExtractor().extract_price_and_currency(price.strip()),
                         "url": href,
                         "category": product_dic["category"],
+                        "is_available": True,
                     }
 
                     # 1) get the visible text
@@ -174,9 +174,9 @@ class SearchInBasalam:
                     )
                     if kg is not None and int(kg) > 0:
                         product_dic["amount_kg"] = kg
-                        product_dic["price_per_kg"] = int(product_dic["price"]) / int(
-                            kg
-                        )
+                        product_dic["price_per_kg"] = int(
+                            price.strip().replace(",", "")
+                        ) / int(kg)
                     else:
                         product_dic["price_per_kg"] = "nan"
                         product_dic["amount_kg"] = "nan"
@@ -187,7 +187,7 @@ class SearchInBasalam:
                     print(
                         f"""
     name: {name.strip()}
-    price: {PriceExtractor().extract_price_and_currency(price.strip())}
+    price: {price.strip()}
     url: {href}
     category: {product_dic["category"]}
     kg: {product_dic["amount_kg"]}
@@ -250,7 +250,7 @@ class SearchInBasalam:
 
             full_text_price = product_dic["price"]
             digits_only = re.sub(r"[^\d]", "", str(full_text_price))  # → "1775000"
-            price = int(digits_only)
+            price = int(digits_only) * 10
 
             unit_kg_locator = self.page.locator(
                 "p.bs-text.bs-text--body-sm.bs-text--fs-14"
@@ -293,7 +293,7 @@ class SearchInBasalam:
             print(
                 f"""
     name: {product_dic["name"]}
-    total price: {PriceExtractor().extract_price_and_currency(price)}
+    total price: {price}
     price/kg: {price_per_kg}
 url: {product_dic["url"]}
 amount_kg:{kg},

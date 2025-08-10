@@ -174,7 +174,7 @@ class SearchInKoodforosh:
                 "name": product_name,
                 "url": productUrl,
                 "price_per_kg": "nan",
-                "price": PriceExtractor().extract_price_and_currency(raw_price),
+                "price": raw_price,
                 "category": category,
             }
 
