@@ -8,7 +8,6 @@ from typing import List, Dict
 import traceback
 from priceBook import PriceBook
 from unitExtractor import UnitExtractor
-from priceExractor import PriceExtractor
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 155000
@@ -175,7 +174,7 @@ class SearchInBasalam:
                     if kg is not None and int(kg) > 0:
                         product_dic["amount_kg"] = kg
                         product_dic["price_per_kg"] = int(
-                            price.strip().replace(",", "")
+                            price.replace("٬", "").strip()
                         ) / int(kg)
                     else:
                         product_dic["price_per_kg"] = "nan"

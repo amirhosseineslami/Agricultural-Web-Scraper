@@ -5,7 +5,6 @@ from typing import Tuple, Optional, List, Dict
 from decimal import Decimal, InvalidOperation
 from collections import OrderedDict
 import asyncio
-
 import logging
 
 # configure only a file handler

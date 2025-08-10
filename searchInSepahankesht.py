@@ -8,7 +8,6 @@ from typing import List, Dict
 import traceback
 from priceBook import PriceBook
 from unitExtractor import UnitExtractor
-from priceExractor import PriceExtractor
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 1000

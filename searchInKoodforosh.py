@@ -7,7 +7,6 @@ import traceback
 
 TIMOUT_TIME = 35_000
 from priceBook import PriceBook
-from priceExractor import PriceExtractor
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 

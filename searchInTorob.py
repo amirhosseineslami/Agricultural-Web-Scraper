@@ -8,7 +8,6 @@ from typing import List, Dict
 import traceback
 from priceBook import PriceBook
 from unitExtractor import UnitExtractor
-from priceExractor import PriceExtractor
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 BLACK_LIST_PRODUCTS = []
