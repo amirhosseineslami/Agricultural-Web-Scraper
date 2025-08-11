@@ -11,9 +11,7 @@ from unitExtractor import UnitExtractor
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 155000
-import re
 
-import re
 
 # Example mappings
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹٫", "0123456789.")
@@ -40,6 +38,7 @@ UNIT_KEYWORDS = {
     "ml": 0.001,
     "l": 1,
 }
+book = PriceBook()
 
 # Regex-friendly keys including fuzzy/combined ones
 UNIT_PATTERN = "|".join(
@@ -125,7 +124,9 @@ class SearchInBasalam:
             )
 
         # Search in subsequential
+        book = PriceBook()
         await self.page.goto(product_dic["url"], timeout=TIMEOUT)
+        product_dic["product_menu_url"] = product_dic["url"]
 
         print("here we're in the specific fertilizer category page")
 
@@ -133,15 +134,31 @@ class SearchInBasalam:
             # Assumes you're already on a fertilizer page
             product_blocks = await self.page.locator("a.EaqW1o.tED1ki._77T3WS").all()
 
+            # If this page already is exist in the progress file so go to the next page
+            if await book.isThisBlocksPageCheckedBefore(product_dic):
+                print("This page is checked before!")
+
+                new_page_link = await self.got_to_the_next_page()
+
+                if new_page_link == None:
+                    print("Finished all the pages!")
+                    return
+                else:
+                    # It went to the next page
+                    product_dic["product_menu_url"] = new_page_link
+                    continue
+
             products = []
-            book = PriceBook()
 
             for block in product_blocks:
                 try:
                     # Get the <a> with class "product-name"
                     # name_el = block.locator("h3.wd-entities-title")
                     name = await block.locator("h2.Zkctoc.kLgrzf").inner_text()
+                    product_dic["name"] = name
+
                     href = "https://basalam.com" + await block.get_attribute("href")
+                    product_dic["url"] = href
                     print(name, href)
 
                     # Get the price
@@ -160,12 +177,8 @@ class SearchInBasalam:
                     except Exception as e:
                         traceback.print_exc()
 
-                    product_dic = {
-                        "name": name.strip(),
-                        "url": href,
-                        "category": product_dic["category"],
-                        "is_available": True,
-                    }
+                    product_dic["is_available"] = True
+                    product_dic["price"] = price
 
                     # 1) get the visible text
                     kg, unit = await UnitExtractor().extract_amount_and_unit(
@@ -183,14 +196,18 @@ class SearchInBasalam:
 
                     products.append(product_dic)
                     book.upsert(product_dic)
+
+                    # Save the progress of this page in the
+                    book.log_progress(product_dic)
+
                     print(
                         f"""
-    name: {name.strip()}
-    price: {price.strip()}
-    url: {href}
-    category: {product_dic["category"]}
-    kg: {product_dic["amount_kg"]}
-    price/kg: {product_dic["price_per_kg"]}
+                        name: {name.strip()}
+                        price: {price.strip()}
+                        url: {href}
+                        category: {product_dic["category"]}
+                        kg: {product_dic["amount_kg"]}
+                        price/kg: {product_dic["price_per_kg"]}
                         """
                     )
                 except Exception as e:
@@ -198,27 +215,10 @@ class SearchInBasalam:
                         f"⚠️ Skipping a product due to error: {traceback.format_exc()}"
                     )
 
-            next_page_locator = self.page.locator(
-                "span.bs-pagination__arrow.bs-pagination__arrow--show"
-            ).last
-            next_page_link = None
-            if await next_page_locator.inner_text() != "بعدی":
-                break
-            try:
-                next_page_link = (
-                    "https://basalam.com"
-                    + await next_page_locator.get_attribute(
-                        "href", timeout=TIMEOUT_FOR_FINDING_NEXTPAGE_KEY
-                    )
-                )
-            except Exception as e:
-                print(f"No next page found!{traceback.format_exc()}")
+            product_dic["product_menu_url"] = await self.got_to_the_next_page()
 
-            if next_page_link is not None:
-                print(next_page_link)
-                await self.page.goto(next_page_link, timeout=TIMEOUT)
-
-            else:
+            if product_dic["product_menu_url"] == None:
+                # No page is remaind
                 break
 
         return products
@@ -227,6 +227,7 @@ class SearchInBasalam:
         self, product_dic: dict
     ) -> dict[str, float | str] | None:
         is_product_available = True
+
         try:
             await self.page.goto(product_dic["url"], timeout=TIMEOUT)
 
@@ -247,7 +248,9 @@ class SearchInBasalam:
             #     product_dic["is_available"] = False
             #     is_product_available = False
 
-            full_text_price = product_dic["price"]
+            if product_dic["price"]:
+                full_text_price = product_dic["price"]
+
             digits_only = re.sub(r"[^\d]", "", str(full_text_price))  # → "1775000"
             price = int(digits_only) * 10
 
@@ -310,7 +313,6 @@ amount_kg:{kg},
             return product_dic
 
     async def get_all_prices(self):
-        book = PriceBook()
         finalList = []
         rawProducts = (
             await self.extract_products_from_specific_fertilizer_category_page(
@@ -357,3 +359,30 @@ amount_kg:{kg},
             # Scroll to the bottom
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await self.page.wait_for_timeout(scroll_pause)
+
+    async def got_to_the_next_page(self):
+
+        # go to the next page if is exist
+        next_page_locator = self.page.locator(
+            "span.bs-pagination__arrow.bs-pagination__arrow--show"
+        ).last
+        next_page_link = None
+        if await next_page_locator.inner_text() != "بعدی":
+            return None
+        try:
+            next_page_link = (
+                "https://basalam.com"
+                + await next_page_locator.get_attribute(
+                    "href", timeout=TIMEOUT_FOR_FINDING_NEXTPAGE_KEY
+                )
+            )
+        except Exception as e:
+            print(f"No next page found!{traceback.format_exc()}")
+
+        if next_page_link is not None:
+            print(next_page_link)
+            await self.page.goto(next_page_link, timeout=TIMEOUT)
+            return next_page_link
+
+        else:
+            return None

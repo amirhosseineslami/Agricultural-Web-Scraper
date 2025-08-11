@@ -1,7 +1,7 @@
 # price_book.py
 import os
 import pandas as pd
-import tldextract
+import tldextract, traceback
 from datetime import datetime
 from typing import Dict, Any, List
 from openpyxl.utils import get_column_letter
@@ -24,6 +24,7 @@ class PriceBook:
         "is_available",
         "created_at",
         "last_updated",
+        "product_menu_url",
     ]
 
     def __init__(self, path: str | None = None):
@@ -76,7 +77,6 @@ class PriceBook:
             self.sheets[domain].loc[len(df)] = row
 
         self.save()
-        self.save_csv()
 
     def bulk_upsert(self, rows: List[Dict[str, Any]]):
         for r in rows:
@@ -162,17 +162,95 @@ class PriceBook:
             f"✅ Saved {sum(len(df) for df in self.sheets.values())} rows → {outfile}"
         )
 
-    def save_csv(self, folder: str = "output_csv") -> None:
-        """
-        Save each domain sheet as a separate CSV file.
-        Files are saved in the specified folder (default 'output_csv').
-        """
-        os.makedirs(folder, exist_ok=True)
+    def extract_domain_from_url(self, product_dic: Dict[str, any]):
+        return ((str(product_dic["url"])).split("/"))[2]
 
-        for domain, df in self.sheets.items():
-            # Drop the _pk column if exists before saving CSV
-            df_to_save = df.drop(columns=["_pk"], errors="ignore")
-            csv_path = os.path.join(folder, f"{domain}.csv")
-            df_to_save.to_csv(csv_path, index=False)
+    def log_progress(self, product_dic: Dict[str, any]):
 
-        print(f"✅ Saved {len(self.sheets)} CSV files in folder '{folder}'")
+        # Domain like Basalam.com
+        file_to_save_name = self.extract_domain_from_url(product_dic) + ".csv"
+
+        # Create directory
+        folder_path_to_save = "log"
+        os.makedirs(folder_path_to_save, exist_ok=True)
+        complete_path_to_file = os.path.join(folder_path_to_save, file_to_save_name)
+
+        # get data frame to save the progress
+        df = None
+        try:
+            if os.path.exists(complete_path_to_file):
+                df = pd.read_csv(complete_path_to_file)
+                df = pd.concat([df, pd.DataFrame([product_dic])])
+            else:
+                df = pd.DataFrame([product_dic])
+
+            # Save the data frame as csv
+            df.to_csv(path_or_buf=complete_path_to_file, index=False)
+
+        except Exception as e:
+            # If any error happens
+            traceback.print_exc()
+            error_path = os.path.join(folder_path_to_save, "error", file_to_save_name)
+
+            # error data frame
+            error_df = pd.DataFrame([product_dic])
+
+            # concat it with past error data frame
+            if os.path.exists(error_path):
+                try:
+                    exist_error_df = pd.read_csv(error_path)
+                    error_df = pd.concat(error_df, exist_error_df)
+                except Exception as e:
+                    traceback.print_exc()
+            error_df.to_csv(error_path, index=False)
+
+        return
+
+    def get_log_progress(self, product_dic: Dict[str, any]):
+
+        # Domain like Basalam.com
+        file_to_save_name = self.extract_domain_from_url(product_dic) + ".csv"
+        folder_path_to_save = "log"
+
+        complete_path_to_file = os.path.join(folder_path_to_save, file_to_save_name)
+
+        # Create directory
+        if os.path.exists(complete_path_to_file):
+            return pd.read_csv(complete_path_to_file)
+
+        else:
+            return None
+
+    async def isThisBlocksPageCheckedBefore(self, product_dic):
+        # Domain like Basalam.com
+        isChecked = False
+        file_complete_path = os.path.join(
+            "log", self.extract_domain_from_url(product_dic) + ".csv"
+        )
+
+        try:
+            if os.path.exists(file_complete_path):
+                df = pd.read_csv(file_complete_path)
+
+                # path exists and you got the data frame
+                print("checking in the log progress:", product_dic["product_menu_url"])
+                filtered_df = df[
+                    df["product_menu_url"] == product_dic["product_menu_url"]
+                ]
+
+                if not filtered_df.empty:
+                    # if any record is available with this menu url
+                    print("There are some recordssssssssssssss")
+
+                    if (
+                        df.iloc[-1]["product_menu_url"]
+                        != product_dic["product_menu_url"]
+                    ):
+                        # is exist in the list and isn't the last means that its task is completed
+                        isChecked = True
+                        print("this is checkedddddddddddddddddd")
+
+        except Exception as e:
+            traceback.print_exc()
+
+        return isChecked
