@@ -165,13 +165,16 @@ class PriceBook:
     def extract_domain_from_url(self, product_dic: Dict[str, any]):
         return ((str(product_dic["url"])).split("/"))[2]
 
-    def log_progress(self, product_dic: Dict[str, any]):
+    def log_progress(self, product_dic: Dict[str, any], isLoggingInPerKg: False):
 
         # Domain like Basalam.com
         file_to_save_name = self.extract_domain_from_url(product_dic) + ".csv"
 
         # Create directory
         folder_path_to_save = "log"
+        if isLoggingInPerKg:
+            folder_path_to_save = os.path.join(folder_path_to_save, "per_kg")
+
         os.makedirs(folder_path_to_save, exist_ok=True)
         complete_path_to_file = os.path.join(folder_path_to_save, file_to_save_name)
 
@@ -206,11 +209,13 @@ class PriceBook:
 
         return
 
-    def get_log_progress(self, product_dic: Dict[str, any]):
+    def get_log_progress(self, product_dic: Dict[str, any], isLoggingInPerKg: False):
 
         # Domain like Basalam.com
         file_to_save_name = self.extract_domain_from_url(product_dic) + ".csv"
         folder_path_to_save = "log"
+        if isLoggingInPerKg:
+            folder_path_to_save = os.path.join(folder_path_to_save, "per_kg")
 
         complete_path_to_file = os.path.join(folder_path_to_save, file_to_save_name)
 
@@ -221,36 +226,42 @@ class PriceBook:
         else:
             return None
 
-    async def isThisBlocksPageCheckedBefore(self, product_dic):
+    async def isThisBlocksPageCheckedBefore(
+        self, product_dic, isLoggingInPerKg: False
+    ) -> bool:
         # Domain like Basalam.com
         isChecked = False
         file_complete_path = os.path.join(
             "log", self.extract_domain_from_url(product_dic) + ".csv"
         )
+        if isLoggingInPerKg:
+            file_complete_path = os.path.join(
+                "log", "per_kg", self.extract_domain_from_url(product_dic) + ".csv"
+            )
 
         try:
             if os.path.exists(file_complete_path):
                 df = pd.read_csv(file_complete_path)
 
                 # path exists and you got the data frame
-                print("checking in the log progress:", product_dic["product_menu_url"])
                 filtered_df = df[
                     df["product_menu_url"] == product_dic["product_menu_url"]
                 ]
 
                 if not filtered_df.empty:
                     # if any record is available with this menu url
-                    print("There are some recordssssssssssssss")
 
                     if (
                         df.iloc[-1]["product_menu_url"]
                         != product_dic["product_menu_url"]
+                        or "209"
+                        == (str(df.iloc[-1]["product_menu_url"])).split("=")[-1].strip()
                     ):
                         # is exist in the list and isn't the last means that its task is completed
                         isChecked = True
-                        print("this is checkedddddddddddddddddd")
 
         except Exception as e:
             traceback.print_exc()
+            return False
 
         return isChecked

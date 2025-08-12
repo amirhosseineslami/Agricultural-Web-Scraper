@@ -32,6 +32,7 @@ class PersianNumberNormalizer:
     def convert_numbers(self, text: str) -> str:
         """
         Convert all Persian and Arabic digits in the input text to English digits.
+        Also removes any Persian/Arabic/English thousands separators.
         """
         if not isinstance(text, str):
             return text
@@ -43,6 +44,9 @@ class PersianNumberNormalizer:
         text = text.translate(self.persian_trans_table)
         # Translate Arabic digits
         text = text.translate(self.arabic_trans_table)
+
+        # Remove Persian/Arabic/English commas and spaces used as separators
+        text = text.replace("٬", "").replace("،", "").replace(",", "").strip()
 
         return text
 

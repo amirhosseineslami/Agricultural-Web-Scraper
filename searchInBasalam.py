@@ -8,6 +8,7 @@ from typing import List, Dict
 import traceback
 from priceBook import PriceBook
 from unitExtractor import UnitExtractor
+import pandas as pd
 
 TIMEOUT = 4500000
 TIMEOUT_FOR_FINDING_NEXTPAGE_KEY = 155000
@@ -198,7 +199,7 @@ class SearchInBasalam:
                     book.upsert(product_dic)
 
                     # Save the progress of this page in the
-                    book.log_progress(product_dic)
+                    book.log_progress(product_dic, False)
 
                     print(
                         f"""
@@ -231,28 +232,11 @@ class SearchInBasalam:
         try:
             await self.page.goto(product_dic["url"], timeout=TIMEOUT)
 
-            # Find the locator for the span inside the 'out of stock' paragraph
-            # out_of_stock_span = self.page.locator(
-            #     "p.stock.out-of-stock.wd-style-default"
-            # )
-            # count = 0
-            # try:
-            #     count = await out_of_stock_span.count()
-            # except Exception as e:
-            #     print(traceback.format_exc())
-
-            # # Check if the element exists
-            # if out_of_stock_span is not None and count > 0:
-            #     exist_text = await out_of_stock_span.first.inner_text()
-            #     print(exist_text)  # e.g., "ناموجود"
-            #     product_dic["is_available"] = False
-            #     is_product_available = False
-
             if product_dic["price"]:
                 full_text_price = product_dic["price"]
 
-            digits_only = re.sub(r"[^\d]", "", str(full_text_price))  # → "1775000"
-            price = int(digits_only) * 10
+            digits_only = re.sub(r"[^\d]", "", str(full_text_price))
+            price = int(digits_only)
 
             unit_kg_locator = self.page.locator(
                 "p.bs-text.bs-text--body-sm.bs-text--fs-14"
@@ -271,7 +255,9 @@ class SearchInBasalam:
             if kg is not None:
                 print(unit_kg_text)
             else:
-                kg, unit = await unit(product_dic["name"])
+                kg, unit = await UnitExtractor().extract_amount_and_unit(
+                    product_dic["name"]
+                )
                 if kg is not None and int(kg) > 0:
                     product_dic["amount_kg"] = kg
                 else:
@@ -306,6 +292,7 @@ amount_kg:{kg},
             product_dic["price"] = price
             product_dic["amount_kg"] = kg
             product_dic["is_available"] = is_product_available
+            book.log_progress(product_dic, True)
             return product_dic
 
         except Exception as e:
@@ -314,13 +301,32 @@ amount_kg:{kg},
 
     async def get_all_prices(self):
         finalList = []
-        rawProducts = (
-            await self.extract_products_from_specific_fertilizer_category_page(
-                {"category": "nan"}
-            )
+        # rawProducts = (
+        #     await self.extract_products_from_specific_fertilizer_category_page(
+        #         {"category": "nan"}
+        #     )
+        # )
+        logdf = book.get_log_progress(
+            product_dic={
+                "url": "https://basalam.com/cat/tools/%D8%AE%D8%A7%DA%A9-%DA%A9%D9%88%D8%AF-%D8%B3%D9%85%D9%88%D9%85"
+            },
+            isLoggingInPerKg=False,
         )
 
-        for rawProduct in rawProducts:
+        for idx, row in logdf.iterrows():
+            rawProduct = row.to_dict()
+
+            if rawProduct[
+                "price_per_kg"
+            ] > 0 or await book.isThisBlocksPageCheckedBefore(rawProduct, True):
+                # If the perkg price exists skip
+                print(
+                    "skipping.",
+                    rawProduct["price_per_kg"] > 0,
+                    await book.isThisBlocksPageCheckedBefore(rawProduct, True),
+                )
+                continue
+
             fullData = await self.get_price_per_kg(rawProduct)
             finalList.append(fullData)
             try:

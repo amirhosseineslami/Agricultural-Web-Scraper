@@ -7,6 +7,7 @@ import re
 from typing import List, Dict
 import traceback
 from priceBook import PriceBook
+from persianNumberNormalizer import PersianNumberNormalizer
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 TIMEOUT = 4500000
@@ -96,7 +97,9 @@ class SearchInAgriplus:
 
                 # Check if it exists
                 if await price_el.count() > 0:
-                    price = await price_el.first.inner_text()
+                    price = PersianNumberNormalizer().convert_numbers(
+                        await price_el.first.inner_text()
+                    )
                 else:
                     price = "N/A"
 
@@ -145,7 +148,7 @@ category: {product_dic["category"]}
 
             full_text_price = product_dic["price"]
             digits_only = re.sub(r"[^\d]", "", full_text_price)  # → "1775000"
-            price = int(digits_only)
+            price = int(digits_only) / 10
 
             unit_kg_locator = self.page.locator("span.ux-swatch__text").first
             print(unit_kg_locator)

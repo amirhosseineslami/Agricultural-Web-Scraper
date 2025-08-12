@@ -157,8 +157,10 @@ category: {category}
 
             # 1) get the visible text
             unit_kg_text = await unit_kg_locator.inner_text()
-            kg = UnitExtractor().extract_amount_and_unit(unit_kg_text)
+            kg, _ = await UnitExtractor().extract_amount_and_unit(unit_kg_text)
             price_per_kg = 0
+            if kg is None:
+                kg = 0
 
             # Final calculation
             if kg > 0:
@@ -185,9 +187,7 @@ amount_kg:{kg},
             return {
                 "name": product_name,
                 "price": price,
-                "price_per_kg": PriceExtractor().extract_price_and_currency(
-                    price_per_kg
-                ),
+                "price_per_kg": price_per_kg,
                 "category": category,
                 "url": productUrl,
                 "amount_kg": kg,
