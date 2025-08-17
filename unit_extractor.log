@@ -169179,3 +169179,476 @@ BrokenPipeError: [WinError 232] The pipe is being closed
 2025-08-17 14:24:34,903 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
 2025-08-17 14:24:44,378 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
 2025-08-17 14:24:44,378 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:24:53,620 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:53,620 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:02,061 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:02,061 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:10,984 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:10,984 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:20,246 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:20,246 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:29,655 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:29,655 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:38,419 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:38,419 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:46,956 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:46,956 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:25:55,645 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:25:55,645 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:26:06,133 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:26:06,134 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:26:15,684 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:26:15,684 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:26:25,067 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:26:25,067 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:26:34,278 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:26:34,278 - DEBUG - Extracted 0.05 کیلوگرم -> 0.050 kg
+2025-08-17 14:26:42,521 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:26:42,521 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:26:51,090 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:26:51,090 - DEBUG - Extracted 30.0 کیلوگرم -> 30.00 kg
+2025-08-17 14:27:00,636 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:00,637 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:27:09,860 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:09,860 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:27:18,852 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:18,852 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:27:28,198 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:28,198 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:27:37,315 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:37,315 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:27:45,925 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:45,925 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:27:54,977 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:27:54,977 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:28:04,584 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:28:04,584 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:28:13,738 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:28:13,738 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:28:23,510 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:28:23,510 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:28:33,413 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:28:33,414 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:28:42,698 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:28:42,698 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:28:53,286 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:28:53,287 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:29:03,356 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:03,356 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:29:12,541 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:12,541 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:29:21,871 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:21,871 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:29:31,565 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:31,565 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:29:40,852 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:40,852 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:29:49,856 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:49,856 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:29:59,322 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:29:59,322 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:30:08,322 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:30:08,322 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:30:17,943 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:30:17,943 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:30:27,458 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:30:27,459 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:30:37,186 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:30:37,186 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:30:46,880 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:30:46,880 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:30:56,309 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:30:56,309 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:31:11,073 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:31:11,073 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:31:19,535 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:31:19,535 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:31:28,552 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:31:28,552 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:31:37,253 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:31:37,253 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:31:45,611 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:31:45,612 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:31:54,389 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:31:54,389 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:32:03,828 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:32:03,828 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:32:13,576 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:32:13,576 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:32:23,764 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:32:23,764 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:32:33,334 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:32:33,334 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:32:43,299 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:32:43,299 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:32:53,466 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:32:53,466 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:33:02,579 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:02,580 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:33:11,631 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:11,631 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:33:20,574 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:20,574 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:33:29,102 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:29,102 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:33:37,628 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:37,628 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:33:47,030 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:47,030 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:33:55,526 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:33:55,526 - DEBUG - Extracted 20.0 کیلوگرم -> 20.00 kg
+2025-08-17 14:34:04,594 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:04,594 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:34:13,202 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:13,202 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:34:21,790 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:21,790 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:34:31,462 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:31,463 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:34:39,646 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:39,647 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:34:48,529 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:48,529 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:34:57,152 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:34:57,152 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:35:05,764 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:05,765 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:35:14,631 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:14,631 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:35:23,796 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:23,796 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:35:33,578 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:33,578 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:35:42,838 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:42,838 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:35:51,536 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:51,536 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:35:59,942 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:35:59,942 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:36:09,162 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:36:09,162 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:36:18,469 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:36:18,469 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:36:28,417 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:36:28,417 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:36:38,313 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:36:38,313 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:36:47,503 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:36:47,503 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:36:56,580 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:36:56,580 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:37:05,464 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:37:05,464 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:37:13,931 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:37:13,931 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:37:23,118 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:37:23,118 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:37:32,845 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:37:32,845 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:37:43,168 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:37:43,168 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:37:52,453 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:37:52,453 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:38:01,830 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:01,830 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:38:11,108 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:11,108 - DEBUG - Extracted 0.05 کیلوگرم -> 0.050 kg
+2025-08-17 14:38:20,693 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:20,693 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:38:30,842 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:30,842 - DEBUG - Extracted 30.0 کیلوگرم -> 30.00 kg
+2025-08-17 14:38:40,775 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:40,775 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:38:50,558 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:50,558 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:38:59,402 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:38:59,402 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:39:08,809 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:39:08,809 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:39:17,824 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:39:17,824 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:39:26,492 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:39:26,492 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:39:35,014 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:39:35,014 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:39:43,881 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:39:43,881 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:39:52,373 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:39:52,373 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:40:00,988 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:00,988 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:40:10,182 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:10,182 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:40:19,318 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:19,318 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:40:29,232 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:29,232 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:40:37,647 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:37,647 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:40:46,300 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:46,300 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:40:56,916 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:40:56,916 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:41:08,151 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:41:08,151 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:41:17,683 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:41:17,683 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:41:28,152 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:41:28,152 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:41:37,972 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:41:37,972 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:41:47,467 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:41:47,467 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:41:56,501 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:41:56,501 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:42:05,790 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:42:05,790 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:42:16,006 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:42:16,006 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:42:26,082 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:42:26,082 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:42:36,388 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:42:36,388 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:42:47,036 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:42:47,036 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:42:56,386 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:42:56,387 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:43:05,940 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:43:05,940 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:43:18,389 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:43:18,389 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:43:28,012 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:43:28,012 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:44:19,305 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:44:19,305 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:44:29,528 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:44:29,528 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:44:39,187 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:44:39,187 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:44:47,569 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:44:47,569 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:44:56,322 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:44:56,322 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:45:05,642 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:45:05,642 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:45:15,121 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:45:15,121 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:45:24,572 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:45:24,572 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:45:34,165 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:45:34,165 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:45:44,055 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:45:44,055 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:45:53,865 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:45:53,865 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:46:08,465 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:46:08,465 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:46:18,205 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:46:18,205 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:46:27,438 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:46:27,438 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:46:36,741 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:46:36,741 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:46:46,057 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:46:46,057 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:46:55,388 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:46:55,388 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:47:04,861 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:47:04,861 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:47:14,850 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:47:14,850 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:47:24,187 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:47:24,187 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:47:34,488 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:47:34,488 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:47:43,938 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:47:43,938 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:47:53,179 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:47:53,179 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:48:02,570 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:48:02,570 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:48:12,354 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:48:12,354 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:48:22,004 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:48:22,004 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:48:31,531 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:48:31,531 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:48:41,838 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:48:41,838 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:48:51,654 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:48:51,654 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:49:03,504 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:03,504 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:49:13,519 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:13,519 - DEBUG - Extracted 2.0 کیلوگرم -> 2.00 kg
+2025-08-17 14:49:22,987 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:22,987 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:49:32,016 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:32,016 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:49:41,238 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:41,238 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:49:50,309 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:50,309 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:49:58,986 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:49:58,986 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:50:08,077 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:50:08,077 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:50:16,970 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:50:16,970 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:50:27,003 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:50:27,003 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:50:38,970 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:50:38,970 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:50:38,970 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:50:47,967 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:50:47,967 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:50:56,986 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:50:56,986 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:51:05,976 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:51:05,976 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:51:15,020 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:51:15,020 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:51:23,804 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:51:23,804 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:51:34,136 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:51:34,136 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:51:44,410 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:51:44,411 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:51:54,329 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:51:54,329 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:52:03,253 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:52:03,253 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:52:13,368 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:52:13,368 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:52:22,953 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:52:22,953 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:52:32,502 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:52:32,502 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:52:46,519 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:52:46,519 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:52:55,302 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:52:55,302 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:53:05,369 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:53:05,369 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:53:14,752 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:53:14,752 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:53:24,358 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:53:24,358 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:53:34,684 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:53:34,684 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:53:44,054 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:53:44,054 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:53:54,002 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:53:54,002 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:54:03,802 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:03,802 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:54:12,778 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:12,778 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:54:22,235 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:22,235 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:54:31,866 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:31,866 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:54:40,634 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:40,634 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:54:49,319 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:49,319 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:54:58,208 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:54:58,208 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:55:07,518 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:55:07,518 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:55:16,585 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:55:16,585 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:55:25,554 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:55:25,554 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:55:34,335 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:55:34,335 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:55:42,702 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:55:42,702 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:55:51,185 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:55:51,185 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:56:00,035 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:00,035 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:56:08,968 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:08,968 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:56:18,218 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:18,218 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:56:31,585 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:31,585 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:56:31,585 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:56:40,517 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:40,517 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:56:49,304 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:49,304 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:56:58,438 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:56:58,438 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:57:07,482 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:57:07,482 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:57:16,533 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:57:16,533 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:57:25,537 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:57:25,537 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:57:35,767 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:57:35,767 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:57:45,468 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:57:45,468 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:57:56,060 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:57:56,060 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:58:06,334 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:58:06,334 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:58:16,051 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:58:16,051 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:58:16,051 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:58:28,855 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:58:28,855 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:58:28,855 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:58:39,587 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:58:39,587 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:58:39,587 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:58:48,560 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:58:48,560 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:58:59,175 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:58:59,175 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:59:09,372 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:59:09,372 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 15:03:50,958 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:28:07,920 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:29:30,057 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:29:45,720 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:29:49,826 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:30:21,895 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:31:01,174 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:34:40,732 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:35:15,554 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:35:36,165 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:36:42,054 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:39:06,560 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:41:22,121 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:45:19,746 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:45:41,738 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:46:09,837 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:47:25,887 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:47:45,225 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:48:16,503 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:48:56,912 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:49:41,019 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:51:04,031 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:53:57,478 - DEBUG - Using proactor: IocpProactor
+2025-08-17 16:57:19,671 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:00:42,288 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:02:25,836 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:03:55,035 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:05:17,292 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:10:03,896 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:11:10,699 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:13:39,644 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:16:02,602 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:17:54,197 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:18:00,841 - DEBUG - Attempting to acquire lock 1645908474960 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:00,842 - DEBUG - Lock 1645908474960 acquired on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:00,856 - DEBUG - Attempting to release lock 1645908474960 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:00,856 - DEBUG - Lock 1645908474960 released on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:34,073 - DEBUG - Using proactor: IocpProactor
+2025-08-17 17:18:41,530 - DEBUG - Attempting to acquire lock 2147834941712 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:41,530 - DEBUG - Lock 2147834941712 acquired on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:41,532 - DEBUG - Attempting to release lock 2147834941712 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 17:18:41,532 - DEBUG - Lock 2147834941712 released on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
