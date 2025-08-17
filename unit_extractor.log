@@ -169041,3 +169041,16 @@ BrokenPipeError: [WinError 232] The pipe is being closed
 2025-08-13 03:19:47,936 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
 2025-08-13 03:19:57,167 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
 2025-08-13 03:19:57,167 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 11:00:07,044 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:00:54,341 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:01:33,053 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:05:14,856 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:05:35,272 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:06:45,159 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:07:52,827 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:08:16,756 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:08:39,340 - DEBUG - Using proactor: IocpProactor
+2025-08-17 11:09:29,356 - DEBUG - Using proactor: IocpProactor
+2025-08-17 13:07:47,481 - DEBUG - Using proactor: IocpProactor
+2025-08-17 13:08:17,009 - DEBUG - Using proactor: IocpProactor
+2025-08-17 13:08:50,327 - DEBUG - Using proactor: IocpProactor
