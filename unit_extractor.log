@@ -169054,3 +169054,128 @@ BrokenPipeError: [WinError 232] The pipe is being closed
 2025-08-17 13:07:47,481 - DEBUG - Using proactor: IocpProactor
 2025-08-17 13:08:17,009 - DEBUG - Using proactor: IocpProactor
 2025-08-17 13:08:50,327 - DEBUG - Using proactor: IocpProactor
+2025-08-17 14:14:17,385 - DEBUG - Using proactor: IocpProactor
+2025-08-17 14:14:50,244 - DEBUG - Attempting to acquire lock 2223912534224 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:14:50,244 - DEBUG - Lock 2223912534224 acquired on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:14:50,256 - DEBUG - Attempting to release lock 2223912534224 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:14:50,256 - DEBUG - Lock 2223912534224 released on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:16:24,730 - ERROR - Future exception was never retrieved
+future: <Future finished exception=BrokenPipeError(32, 'The pipe is being closed', None, 232, None)>
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 397, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 559, in send
+    ov.WriteFile(conn.fileno(), buf)
+BrokenPipeError: [WinError 232] The pipe is being closed
+2025-08-17 14:16:35,127 - DEBUG - Using proactor: IocpProactor
+2025-08-17 14:16:56,008 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:16:56,008 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:16:56,008 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:16:56,009 - DEBUG - Attempting to acquire lock 2466630047568 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:16:56,009 - DEBUG - Lock 2466630047568 acquired on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:16:56,011 - DEBUG - Attempting to release lock 2466630047568 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:16:56,011 - DEBUG - Lock 2466630047568 released on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:17:05,108 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:17:05,108 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:17:15,230 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:17:15,230 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:17:21,613 - ERROR - Future exception was never retrieved
+future: <Future finished exception=BrokenPipeError(32, 'The pipe is being closed', None, 232, None)>
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 397, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 559, in send
+    ov.WriteFile(conn.fileno(), buf)
+BrokenPipeError: [WinError 232] The pipe is being closed
+2025-08-17 14:17:23,835 - DEBUG - Using proactor: IocpProactor
+2025-08-17 14:17:52,460 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:17:52,461 - ERROR - Failed to parse number '٪6': [<class 'decimal.ConversionSyntax'>]
+2025-08-17 14:17:52,461 - INFO - No amount-unit match found in text: ٪6
+2025-08-17 14:17:52,461 - DEBUG - Attempting to acquire lock 2396581904592 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:17:52,462 - DEBUG - Lock 2396581904592 acquired on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:17:52,464 - DEBUG - Attempting to release lock 2396581904592 on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:17:52,464 - DEBUG - Lock 2396581904592 released on D:\webscraping\venv\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-17 14:18:01,079 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:01,079 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:18:09,499 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:09,499 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:18:18,768 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:18,768 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:18:28,548 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:28,548 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:18:37,634 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:37,634 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:18:48,013 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:48,013 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:18:57,501 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:18:57,501 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:19:05,966 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:19:05,966 - DEBUG - Extracted 5.0 کیلوگرم -> 5.00 kg
+2025-08-17 14:19:14,999 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:19:14,999 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:19:24,846 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:19:24,846 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:19:33,879 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:19:33,879 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:19:43,315 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:19:43,315 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:19:52,092 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:19:52,092 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:20:00,754 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:00,754 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:20:09,328 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:09,328 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:20:19,020 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:19,020 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:20:30,072 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:30,072 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:20:39,244 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:39,244 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:20:47,905 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:47,905 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:20:56,575 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:20:56,575 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:21:06,119 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:06,120 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:21:14,827 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:14,828 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:21:23,191 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:23,191 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:21:33,159 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:33,160 - DEBUG - Extracted 20.0 کیلوگرم -> 20.00 kg
+2025-08-17 14:21:42,302 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:42,302 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:21:50,590 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:50,590 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:21:59,359 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:21:59,359 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:22:08,802 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:22:08,802 - DEBUG - Extracted 1.0 کیلوگرم -> 1.00 kg
+2025-08-17 14:22:17,354 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:22:17,354 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:22:26,953 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:22:26,953 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:22:35,930 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:22:35,930 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:22:45,122 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:22:45,122 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:22:54,526 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:22:54,526 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:23:40,662 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:23:40,662 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:23:50,173 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:23:50,173 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg
+2025-08-17 14:24:00,053 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:00,053 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:24:08,855 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:08,855 - DEBUG - Extracted 50.0 کیلوگرم -> 50.00 kg
+2025-08-17 14:24:17,907 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:17,907 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:24:26,166 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:26,166 - DEBUG - Extracted 10.0 کیلوگرم -> 10.00 kg
+2025-08-17 14:24:34,903 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:34,903 - DEBUG - Extracted 25.0 کیلوگرم -> 25.00 kg
+2025-08-17 14:24:44,378 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-17 14:24:44,378 - DEBUG - Extracted 0.0 کیلوگرم -> 0.00 kg

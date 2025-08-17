@@ -7,7 +7,6 @@ import re
 from typing import List, Dict
 import traceback
 from priceBook import PriceBook
-from unitExtractor import UnitExtractor
 
 PERSIAN_TO_LATIN = str.maketrans("۰۱۲۳۴۵۶۷۸۹", "0123456789")
 BLACK_LIST_PRODUCTS = []
@@ -136,7 +135,7 @@ class SearchInTorob:
                     "div.ProductCard_desktop_product-price-text__y20OV"
                 ).inner_text()
 
-                digits_only = PriceExtractor().extract_price_and_currency(product_price)
+                digits_only = re.sub(r"[^\d]", "", product_price)  # → "1775000"
                 pure_price_int = int(digits_only)
 
                 is_available = False
@@ -190,9 +189,7 @@ class SearchInTorob:
 
                 amount_kg = 0
                 # get kg from name of the product
-                amount_kg_list: list = UnitExtractor().extract_amount_and_unit(
-                    amount_kg_str
-                )
+                amount_kg_list: list = await self.extract_amount(amount_kg_str)
                 if len(amount_kg_list) > 0:
                     amount_kg = int(amount_kg_list[0][0])
 
@@ -253,3 +250,14 @@ class SearchInTorob:
             # Scroll to the bottom
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await self.page.wait_for_timeout(scroll_pause)
+
+    async def extract_amount(self, text: str) -> list[tuple[str, str]]:
+        matches = pattern.findall(text)
+        result = []
+
+        for number, unit in matches:
+            # Convert Persian to English digits
+            normalized_number = number.translate(PERSIAN_TO_ENGLISH)
+            result.append((normalized_number, unit))
+
+        return result

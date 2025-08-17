@@ -17,14 +17,14 @@ async def main():
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
 
-        await SearchInTorob(page).get_all_prices()
         await SearchInDigikood(page).get_all_prices()
-        await SearchInAgriplus(page).get_all_prices()
         await SearchInBasalam(page=page).get_all_prices()
         await SearchInKoodforosh(page).get_all_prices()
         await SearchInDigikoud(page).get_all_prices()
         await SearchInSepahankesht(page=page).get_all_prices()
         await SearchInRoyalkesht(page=page).get_all_prices()
+        await SearchInTorob(page).get_all_prices()
+        await SearchInAgriplus(page).get_all_prices()
 
         ProcessData().run(
             input_file="output/price_of_fertilizers.xlsx",
