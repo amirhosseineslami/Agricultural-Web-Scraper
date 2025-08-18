@@ -148,16 +148,20 @@ class SearchInDigikala:
                     product_dic["product_menu_url"] = new_page_link
                     continue
 
-            product_blocks = await self.page.locator(
-                "div.product-list_ProductList__item__LiiNI"
-            ).first.wait_for(state="visible", timeout=TIMOUT_FOR_PAGE_MENU_LOAD)
+            try:
 
-            # Assumes you're already on a fertilizer page
-            product_blocks = await self.page.locator(
-                "div.product-list_ProductList__item__LiiNI"
-            ).all()
+                product_blocks = await self.page.locator(
+                    "div.product-list_ProductList__item__LiiNI"
+                ).first.wait_for(state="visible", timeout=TIMOUT_FOR_PAGE_MENU_LOAD)
 
-            products = []
+                # Assumes you're already on a fertilizer page
+                product_blocks = await self.page.locator(
+                    "div.product-list_ProductList__item__LiiNI"
+                ).all()
+
+                products = []
+            except Exception:
+                traceback.print_exc()
 
             for block in product_blocks:
                 try:
@@ -271,7 +275,6 @@ class SearchInDigikala:
 
             # Get amount of KG
             kg = None
-            unit_kg_text = None
 
             unit_kg_locator = self.page.locator(
                 "p.flex.items-center.w-full.text-body-1.text-neutral-900.break-words"
@@ -286,9 +289,15 @@ class SearchInDigikala:
                 amount_kg_str = await unit_kg_locator.inner_text()
 
                 # get kg from name of the product
-                amount_kg_value_list = (
-                    await UnitExtractor().extract_all_amounts_and_units(amount_kg_str)
-                )
+                try:
+                    amount_kg_value_list = (
+                        await UnitExtractor().extract_all_amounts_and_units(
+                            amount_kg_str
+                        )
+                    )
+                except Exception:
+                    traceback.print_exc()
+
                 unit_temporary = None
                 for amount_kg_value, unit in amount_kg_value_list:
                     if unit is not None and amount_kg_value > 0:
@@ -421,15 +430,19 @@ amount_kg:{amount_kg},
             await self.page.wait_for_timeout(scroll_pause)
 
     async def got_to_the_next_page(self, current_link):
+        try:
+            # go to the next page if is exist
+            next_page_locator = self.page.locator(
+                "span.ml-2.text-body2-strong.hidden.md\\:inline-block"
+            ).last
 
-        # go to the next page if is exist
-        next_page_locator = self.page.locator(
-            "span.ml-2.text-body2-strong.hidden.md\\:inline-block"
-        ).last
-
-        next_page_link = None
-        if await next_page_locator.inner_text() != "بعدی":
+            next_page_link = None
+            if await next_page_locator.inner_text() != "بعدی":
+                return None
+        except:
+            print(f"No next page found!{traceback.format_exc()}")
             return None
+
         try:
             next_page_number = int((current_link.split("="))[-1]) + 1
 
