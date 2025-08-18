@@ -61,6 +61,7 @@ class ProcessData:
         self.df["price_per_kg"] = pd.to_numeric(
             self.df["price_per_kg"], errors="coerce"
         ).astype(float)
+        self.df = self.df[self.df["price_per_kg"] > 12000]
 
         return self.df
 

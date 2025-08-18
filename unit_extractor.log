@@ -171767,3 +171767,361 @@ BrokenPipeError: [WinError 232] The pipe is being closed
 2025-08-18 16:08:28,819 - DEBUG - Extracted 5 لیتر -> 5.0 kg
 2025-08-18 16:08:54,558 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
 2025-08-18 16:08:54,558 - DEBUG - Extracted 5 کیلوگرم -> 5.0 kg
+2025-08-18 16:09:01,123 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:01,123 - DEBUG - Extracted 4 لیتر -> 4.0 kg
+2025-08-18 16:09:07,640 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:07,640 - DEBUG - Extracted 40 گرم -> 0.040 kg
+2025-08-18 16:09:14,414 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:14,414 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 16:09:20,938 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:20,938 - DEBUG - Extracted 3 کیلوگرم -> 3.0 kg
+2025-08-18 16:09:29,401 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:29,402 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 16:09:35,763 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:35,763 - DEBUG - Extracted 60 میلی لیتر -> 0.060 kg
+2025-08-18 16:09:42,007 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:42,007 - DEBUG - Extracted 500 گرم -> 0.500 kg
+2025-08-18 16:09:48,249 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:48,249 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:09:54,425 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:09:54,425 - DEBUG - Extracted 125 میلی لیتر -> 0.125 kg
+2025-08-18 16:10:02,625 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:02,625 - DEBUG - Extracted 118 میلی لیتر -> 0.118 kg
+2025-08-18 16:10:13,160 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:13,161 - DEBUG - Extracted 7 کیلوگرم -> 7.0 kg
+2025-08-18 16:10:19,674 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:19,674 - DEBUG - Extracted 118 میلی لیتر -> 0.118 kg
+2025-08-18 16:10:26,096 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:26,096 - WARNING - Unknown unit: G
+2025-08-18 16:10:26,096 - DEBUG - Fallback extracted 4 لیتر -> 4.0 kg
+2025-08-18 16:10:32,441 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:32,441 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 16:10:40,659 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:40,660 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:10:47,048 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:47,048 - DEBUG - Extracted 150 میلی لیتر -> 0.150 kg
+2025-08-18 16:10:53,560 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:10:53,560 - DEBUG - Package extracted 3 units -> 0.003 kg
+2025-08-18 16:11:00,096 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:00,096 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:11:06,697 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:06,697 - DEBUG - Extracted 500 گرم -> 0.500 kg
+2025-08-18 16:11:14,997 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:14,997 - DEBUG - Extracted 100 گرم -> 0.100 kg
+2025-08-18 16:11:21,385 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:21,386 - DEBUG - Extracted 3.5 کیلو -> 3.50 kg
+2025-08-18 16:11:28,115 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:28,116 - DEBUG - Extracted 150 میلی لیتر -> 0.150 kg
+2025-08-18 16:11:34,520 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:34,520 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:11:41,143 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:41,144 - DEBUG - Extracted 2 لیتر -> 2.0 kg
+2025-08-18 16:11:49,937 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:49,955 - DEBUG - Extracted 500 گرم -> 0.500 kg
+2025-08-18 16:11:56,280 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:11:56,280 - WARNING - Unknown unit: K
+2025-08-18 16:11:56,280 - DEBUG - Fallback extracted 250 میلی لیتر -> 0.250 kg
+2025-08-18 16:12:02,846 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:02,846 - DEBUG - Extracted 3 گرم -> 0.003 kg
+2025-08-18 16:12:09,260 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:09,260 - DEBUG - Extracted 20 گرم -> 0.020 kg
+2025-08-18 16:12:15,705 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:15,705 - DEBUG - Extracted 150 میلی لیتر -> 0.150 kg
+2025-08-18 16:12:24,520 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:24,520 - WARNING - Unknown unit: G
+2025-08-18 16:12:24,520 - DEBUG - Fallback extracted 22 لیتر -> 22.0 kg
+2025-08-18 16:12:31,397 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:31,397 - DEBUG - Extracted 100 گرم -> 0.100 kg
+2025-08-18 16:12:39,067 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:39,067 - DEBUG - Extracted 300 میلی لیتر -> 0.300 kg
+2025-08-18 16:12:46,077 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:46,077 - DEBUG - Package extracted 20 units -> 0.080 kg
+2025-08-18 16:12:52,875 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:12:52,875 - DEBUG - Package extracted 3 units -> 0.003 kg
+2025-08-18 16:13:01,606 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:01,606 - WARNING - Unknown unit: K
+2025-08-18 16:13:01,606 - DEBUG - Fallback extracted 200 گرم -> 0.200 kg
+2025-08-18 16:13:08,634 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:08,649 - DEBUG - Extracted 240 میلی لیتر -> 0.240 kg
+2025-08-18 16:13:15,533 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:15,534 - WARNING - Unknown unit: K
+2025-08-18 16:13:15,534 - DEBUG - Fallback extracted 4 لیتری -> 4.0 kg
+2025-08-18 16:13:22,327 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:22,328 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 16:13:26,785 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:13:29,695 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:29,695 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 16:13:39,114 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'نیترات': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'کلسیم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'گرین': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'پیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'CALSIUM': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'NITRATE': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'وزن': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'یک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - ERROR - Failed to parse number 'کیلوگرم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:13:39,114 - INFO - No amount-unit match found in text: کود نیترات کلسیم گرین پیک مدل CALSIUM NITRATE 1000 وزن یک کیلوگرم
+2025-08-18 16:13:45,835 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:45,835 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:13:52,383 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:52,383 - DEBUG - Extracted 1 L -> 1.0 kg
+2025-08-18 16:13:58,948 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:13:58,948 - DEBUG - Extracted 1 لیتر -> 1.0 kg
+2025-08-18 16:14:05,481 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:14:05,481 - WARNING - Unknown unit: K
+2025-08-18 16:14:05,481 - DEBUG - Fallback extracted 50 گرم -> 0.050 kg
+2025-08-18 16:14:14,055 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:14:14,055 - WARNING - Unknown unit: G
+2025-08-18 16:14:14,055 - DEBUG - Fallback extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:14:20,750 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:14:20,751 - DEBUG - Extracted 3 لیتر -> 3.0 kg
+2025-08-18 16:14:27,381 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:14:27,381 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 16:14:34,050 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:14:34,050 - DEBUG - Extracted 60 میلی لیتر -> 0.060 kg
+2025-08-18 16:14:44,803 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:15:41,623 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:16:26,158 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:16:34,056 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:16:34,056 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:16:34,056 - DEBUG - Attempting to acquire lock 3018045514576 on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:16:34,056 - DEBUG - Lock 3018045514576 acquired on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:16:34,071 - DEBUG - Attempting to release lock 3018045514576 on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:16:34,071 - DEBUG - Lock 3018045514576 released on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:16:40,501 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:16:40,501 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:16:46,851 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:16:46,851 - WARNING - Unknown unit: K
+2025-08-18 16:16:46,851 - DEBUG - Fallback extracted 300 گرم -> 0.300 kg
+2025-08-18 16:16:53,429 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:16:53,429 - WARNING - Unknown unit: K
+2025-08-18 16:16:53,429 - DEBUG - Fallback extracted 100 گرم -> 0.100 kg
+2025-08-18 16:16:59,802 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:16:59,802 - DEBUG - Extracted 5 لیتر -> 5.0 kg
+2025-08-18 16:17:38,549 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:17:38,549 - DEBUG - Extracted 30 میلی لیتر -> 0.030 kg
+2025-08-18 16:17:45,254 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:17:45,254 - DEBUG - Extracted 100 گرم -> 0.100 kg
+2025-08-18 16:17:51,783 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:17:51,783 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:17:58,267 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:17:58,267 - DEBUG - Extracted 50 گرم -> 0.050 kg
+2025-08-18 16:18:04,655 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:04,655 - WARNING - Unknown unit: K
+2025-08-18 16:18:04,655 - DEBUG - Fallback extracted 200 گرم -> 0.200 kg
+2025-08-18 16:18:12,974 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:12,975 - DEBUG - Extracted 15 لیتر -> 15.0 kg
+2025-08-18 16:18:19,572 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:19,572 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:18:26,077 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:26,077 - DEBUG - Extracted 1 لیتر -> 1.0 kg
+2025-08-18 16:18:32,571 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:32,571 - DEBUG - Extracted 5 t -> 5000.0 kg
+2025-08-18 16:18:39,170 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:39,170 - DEBUG - Extracted 1 لیتر -> 1.0 kg
+2025-08-18 16:18:47,507 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:47,507 - DEBUG - Extracted 2 کیلوگرم -> 2.0 kg
+2025-08-18 16:18:54,149 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:18:54,149 - WARNING - Unknown unit: K
+2025-08-18 16:18:54,149 - WARNING - Unknown unit: K
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'نیترات': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'پتاسیم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'فلات': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'کالا': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'NP1K': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - ERROR - Failed to parse number 'وزن': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:18:54,149 - DEBUG - Token-based extracted 1.0 کیلوگرم
+2025-08-18 16:19:00,598 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:00,598 - DEBUG - Extracted 120 گرم -> 0.120 kg
+2025-08-18 16:19:07,247 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:07,247 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:19:13,789 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:13,789 - DEBUG - Extracted 50 گرمی -> 0.050 kg
+2025-08-18 16:19:24,084 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:24,084 - WARNING - Unknown unit: K
+2025-08-18 16:19:24,084 - WARNING - Unknown unit: K
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'نیترات': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'پتاسیم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'گوگرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'پودری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'فلات': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'کالا': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'کد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'NPS1K': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - ERROR - Failed to parse number 'وزن': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:19:24,084 - DEBUG - Token-based extracted 1.0 کیلوگرم
+2025-08-18 16:19:30,626 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:30,626 - WARNING - Unknown unit: G
+2025-08-18 16:19:30,626 - DEBUG - Fallback extracted 20 لیتر -> 20.0 kg
+2025-08-18 16:19:37,121 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:37,121 - WARNING - Unknown unit: K
+2025-08-18 16:19:37,121 - DEBUG - Fallback extracted 50 میلی لیتر -> 0.050 kg
+2025-08-18 16:19:43,633 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:43,633 - DEBUG - Extracted 1 لیتر -> 1.0 kg
+2025-08-18 16:19:50,046 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:50,046 - DEBUG - Extracted 30 میلی لیتر -> 0.030 kg
+2025-08-18 16:19:58,862 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:19:58,862 - WARNING - Unknown unit: K
+2025-08-18 16:19:58,862 - DEBUG - Fallback extracted 1 لیتر -> 1.0 kg
+2025-08-18 16:20:05,269 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:05,269 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:20:11,776 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:11,776 - DEBUG - Extracted 50 گرم -> 0.050 kg
+2025-08-18 16:20:18,252 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:18,252 - WARNING - Unknown unit: K
+2025-08-18 16:20:18,252 - DEBUG - Fallback extracted 200 گرم -> 0.200 kg
+2025-08-18 16:20:24,673 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:24,688 - DEBUG - Extracted 1 L -> 1.0 kg
+2025-08-18 16:20:33,285 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:33,286 - DEBUG - Extracted 100 میلی لیتر -> 0.100 kg
+2025-08-18 16:20:39,778 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:39,794 - DEBUG - Extracted 2 لیتر -> 2.0 kg
+2025-08-18 16:20:46,301 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:46,301 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:20:46,301 - ERROR - Failed to parse number 'مایع': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:20:46,301 - ERROR - Failed to parse number 'سانسوریا': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:20:46,301 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:20:46,301 - ERROR - Failed to parse number 'مجموعه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:20:46,301 - ERROR - Failed to parse number 'عددی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:20:46,301 - INFO - No amount-unit match found in text: کود مایع سانسوریا مدل 1001 مجموعه 2 عددی
+2025-08-18 16:20:52,708 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:52,708 - DEBUG - Extracted 120 گرم -> 0.120 kg
+2025-08-18 16:20:59,196 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:20:59,196 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:21:07,702 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:07,702 - DEBUG - Package extracted 100 units -> 0.100 kg
+2025-08-18 16:21:14,385 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:14,385 - WARNING - Unknown unit: K
+2025-08-18 16:21:14,385 - DEBUG - Fallback extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:21:21,102 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:21,102 - WARNING - Unknown unit: K
+2025-08-18 16:21:21,102 - DEBUG - Fallback extracted 25 گرم -> 0.025 kg
+2025-08-18 16:21:27,596 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:27,596 - DEBUG - Extracted 5 لیتر -> 5.0 kg
+2025-08-18 16:21:34,010 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:34,010 - DEBUG - Extracted 50 گرم -> 0.050 kg
+2025-08-18 16:21:42,301 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:42,301 - WARNING - Unknown unit: G
+2025-08-18 16:21:42,302 - WARNING - Unknown unit: G
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'ورمی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'کمپوست': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'گیلدا': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'کد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'GV100G': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,302 - ERROR - Failed to parse number 'وزن': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:21:42,303 - DEBUG - Token-based extracted 0.100 گرم
+2025-08-18 16:21:48,871 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:48,871 - WARNING - Unknown unit: K
+2025-08-18 16:21:48,871 - DEBUG - Fallback extracted 100 گرمی -> 0.100 kg
+2025-08-18 16:21:55,283 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:21:55,283 - DEBUG - Extracted 100 میلی لیتر -> 0.100 kg
+2025-08-18 16:22:01,835 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'ژله': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'ای': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'کد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'Seven': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'Color': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'بسته': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'سه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - ERROR - Failed to parse number 'عددی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:01,835 - INFO - No amount-unit match found in text: خاک ژله ای کد Seven Color بسته سه عددی
+2025-08-18 16:22:08,358 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:08,358 - DEBUG - Extracted 12 میلی لیتر -> 0.012 kg
+2025-08-18 16:22:16,807 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:16,807 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:22:23,321 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'اره': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'چوب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'گردو': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'گرید': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'پودری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'وزن': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'یک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - ERROR - Failed to parse number 'کیلوگرم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:22:23,337 - INFO - No amount-unit match found in text: خاک اره مدل چوب گردو گرید پودری وزن یک کیلوگرم
+2025-08-18 16:22:29,809 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:29,809 - DEBUG - Extracted 90 میلی لیتر -> 0.090 kg
+2025-08-18 16:22:36,301 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:36,301 - DEBUG - Extracted 30 میلی لیتر -> 0.030 kg
+2025-08-18 16:22:42,913 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:42,913 - DEBUG - Package extracted 5 units -> 0.020 kg
+2025-08-18 16:22:52,678 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:52,678 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:22:59,442 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:22:59,442 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:23:06,017 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:06,017 - DEBUG - Extracted 15 لیتر -> 15.0 kg
+2025-08-18 16:23:12,525 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:12,525 - DEBUG - Extracted 2 کیلوگرمی -> 2.0 kg
+2025-08-18 16:23:19,074 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:19,074 - WARNING - Unknown unit: K
+2025-08-18 16:23:19,074 - DEBUG - Fallback extracted 100 گرم -> 0.100 kg
+2025-08-18 16:23:32,069 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:32,069 - DEBUG - Extracted 100 گرم -> 0.100 kg
+2025-08-18 16:23:38,787 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:38,787 - WARNING - Unknown unit: K
+2025-08-18 16:23:38,787 - DEBUG - Fallback extracted 100 گرم -> 0.100 kg
+2025-08-18 16:23:47,628 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:47,628 - DEBUG - Extracted 110 میلی لیتر -> 0.110 kg
+2025-08-18 16:23:55,754 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:23:55,754 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:24:02,469 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:24:02,470 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:24:11,153 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:24:11,153 - DEBUG - Extracted 30 میلی لیتر -> 0.030 kg
+2025-08-18 16:24:18,017 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:24:18,017 - WARNING - Unknown unit: K
+2025-08-18 16:24:18,017 - DEBUG - Fallback extracted 100 گرم -> 0.100 kg
+2025-08-18 16:24:25,087 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:24:25,087 - WARNING - Unknown unit: G
+2025-08-18 16:24:25,087 - DEBUG - Fallback extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:24:32,144 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:24:32,144 - WARNING - Unknown unit: K
+2025-08-18 16:24:32,144 - DEBUG - Fallback extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:24:45,756 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:25:55,067 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:26:00,115 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:26:00,115 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:26:00,116 - DEBUG - Attempting to acquire lock 1794277491408 on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:26:00,116 - DEBUG - Lock 1794277491408 acquired on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:26:00,118 - DEBUG - Attempting to release lock 1794277491408 on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:26:00,118 - DEBUG - Lock 1794277491408 released on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:26:06,784 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:26:06,784 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:26:13,994 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:26:13,994 - WARNING - Unknown unit: K
+2025-08-18 16:26:13,994 - DEBUG - Fallback extracted 100 گرم -> 0.100 kg
+2025-08-18 16:26:20,452 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:26:20,452 - WARNING - Unknown unit: K
+2025-08-18 16:26:20,452 - DEBUG - Fallback extracted 200 گرم -> 0.200 kg
+2025-08-18 16:26:26,952 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:26:26,952 - DEBUG - Extracted 5 لیتر -> 5.0 kg
+2025-08-18 16:27:20,241 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:27:20,241 - WARNING - Unknown unit: K
+2025-08-18 16:27:20,241 - DEBUG - Fallback extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 16:27:26,944 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:27:26,944 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 16:27:33,503 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'هاسکون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'ام': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'گرین': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'هاس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'M10': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'حجم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'یک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - ERROR - Failed to parse number 'لیتر': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:27:33,504 - INFO - No amount-unit match found in text: کود هاسکون ام 10 گرین هاس مدل M10 حجم یک لیتر
+2025-08-18 16:27:40,189 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:27:40,189 - DEBUG - Extracted 1 لیتر -> 1.0 kg
