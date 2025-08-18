@@ -27,7 +27,6 @@ async def main():
         # await SearchInRoyalkesht(page=page).get_all_prices()
         # await SearchInTorob(page).get_all_prices()
         # await SearchInAgriplus(page).get_all_prices()
-
         # ProcessData().run(
         #     input_file="output/price_of_fertilizers.xlsx",
         #     raw_source_file="source/raw_source_of_fertilizer.xlsx",

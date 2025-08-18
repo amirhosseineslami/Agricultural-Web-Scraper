@@ -192,6 +192,51 @@ class UnitExtractor:
             len(self.package_patterns),
         )
 
+    def normalize_text_and_remove_farsi(self, text: str) -> str:
+        """
+        Normalize input text:
+        - Convert Persian/Arabic/superscript numerals to Latin
+        - Normalize Unicode
+        - Replace Persian/Arabic decimal marks with "."
+        - Remove all irrelevant characters, keeping letters, digits, dots, and basic symbols
+        - Normalize whitespace
+
+        Args:
+            text (str): input string
+
+        Returns:
+            str: normalized string
+        """
+        if not isinstance(text, str):
+            logger.error("Input text must be a string, received: %s", type(text))
+            return ""
+
+        try:
+            # Unicode normalization
+            text = unicodedata.normalize("NFKC", text)
+
+            # Convert numerals
+            text = text.translate(PERSIAN_TO_LATIN)
+            text = text.translate(ARABIC_TO_LATIN)
+            text = text.translate(SUPERSCRIPT_TO_NORMAL)
+
+            # Normalize separators
+            text = re.sub(r"[\u200c\u200d\u200e\u200f\u202f\u00a0]+", " ", text)
+            text = text.replace("٫", ".")  # Persian decimal mark
+            text = text.replace(",", ".")  # convert comma to dot for numbers
+
+            # Remove irrelevant characters (keep letters, digits, dot, dash, percent, space)
+            text = re.sub(r"[^a-zA-Z0-9.\-% ]+", "", text)
+
+            # Normalize spaces
+            text = re.sub(r"\s+", " ", text)
+
+            return text.strip()
+
+        except Exception as e:
+            logger.error("Error normalizing text: %s", str(e))
+            return text
+
     def normalize_text(self, text: str) -> str:
         """
         Normalize input text by converting numerals and handling Unicode variations.
@@ -300,6 +345,8 @@ class UnitExtractor:
         """
         Extract the first valid amount and unit from text and convert to kilograms.
         """
+
+        print(text, "text to convert to kg")
         if not text:
             logger.warning("Empty input text provided")
             return None, None

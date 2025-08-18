@@ -188,7 +188,7 @@ class PriceBook:
                 df = pd.DataFrame([product_dic])
 
             # Save the data frame as csv
-            df.to_csv(path_or_buf=complete_path_to_file, index=False)
+            df.to_csv(path_or_buf=complete_path_to_file, index=False, encoding="utf-8")
 
         except Exception as e:
             # If any error happens
@@ -205,7 +205,7 @@ class PriceBook:
                     error_df = pd.concat(error_df, exist_error_df)
                 except Exception as e:
                     traceback.print_exc()
-            error_df.to_csv(error_path, index=False)
+            error_df.to_csv(error_path, index=False, encoding="utf-8")
 
         return
 
@@ -224,7 +224,7 @@ class PriceBook:
             return pd.read_csv(complete_path_to_file)
 
         else:
-            return None
+            return pd.DataFrame({})
 
     async def isThisBlocksPageCheckedBefore(
         self, product_dic, isLoggingInPerKg: False

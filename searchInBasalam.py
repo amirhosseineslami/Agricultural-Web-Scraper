@@ -301,11 +301,11 @@ amount_kg:{kg},
 
     async def get_all_prices(self):
         finalList = []
-        # rawProducts = (
-        #     await self.extract_products_from_specific_fertilizer_category_page(
-        #         {"category": "nan"}
-        #     )
-        # )
+        rawProducts = (
+            await self.extract_products_from_specific_fertilizer_category_page(
+                {"category": "nan"}
+            )
+        )
         logdf = book.get_log_progress(
             product_dic={
                 "url": "https://basalam.com/cat/tools/%D8%AE%D8%A7%DA%A9-%DA%A9%D9%88%D8%AF-%D8%B3%D9%85%D9%88%D9%85"
