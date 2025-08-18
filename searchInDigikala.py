@@ -254,6 +254,13 @@ class SearchInDigikala:
         is_product_available = True
 
         try:
+
+            if (product_dic["amount_kg"] not in ["nan", None, -1, "None"]) and (
+                product_dic["amount_kg"] > 0
+            ):
+                # If product's kg is already found by its name just return
+                return product_dic
+
             await self.page.goto(product_dic["url"], timeout=TIMEOUT)
 
             if product_dic["price"]:
@@ -274,19 +281,20 @@ class SearchInDigikala:
             except TimeoutError:
                 print("Unit per kg not found")
 
+            amount_kg = 0
             for unit_kg_locator in await unit_kg_locator.all():
                 amount_kg_str = await unit_kg_locator.inner_text()
-                print(amount_kg_str)
 
-                amount_kg = 0
                 # get kg from name of the product
-                amount_kg_list: list = await self.extract_amount(amount_kg_str)
-                if len(amount_kg_list) > 0:
-                    amount_kg = int(amount_kg_list[0][0])
-
-                if amount_kg > 0:
-                    product_dic["price_per_kg"] = int(product_dic["price"]) / amount_kg
-                    print(amount_kg)
+                amount_kg_value_list = (
+                    await UnitExtractor().extract_all_amounts_and_units(amount_kg_str)
+                )
+                unit_temporary = None
+                for amount_kg_value, unit in amount_kg_value_list:
+                    if unit is not None and amount_kg_value > 0:
+                        if unit_temporary is None or unit in ["kg", "KG"]:
+                            amount_kg = amount_kg_value
+                            product_dic["amount_kg"] = amount_kg
 
             # try:
             #     unit_kg_text = await unit_kg_locator.inner_text()  # now it's a str
@@ -295,8 +303,12 @@ class SearchInDigikala:
             #     print(traceback.format_exc())
 
             # 1) get the visible text
-            if kg is not None:
-                print(unit_kg_text)
+            if amount_kg is not None:
+                if amount_kg > 0:
+                    product_dic["price_per_kg"] = int(product_dic["price"]) / amount_kg
+                    print(amount_kg)
+                    kg = amount_kg
+
             else:
                 kg, unit = await UnitExtractor().extract_amount_and_unit(
                     product_dic["name"]
@@ -327,7 +339,7 @@ class SearchInDigikala:
     total price: {price}
     price/kg: {price_per_kg}
 url: {product_dic["url"]}
-amount_kg:{kg},
+amount_kg:{amount_kg},
 "is_available":{is_product_available}
     """
             )
@@ -420,6 +432,12 @@ amount_kg:{kg},
             return None
         try:
             next_page_number = int((current_link.split("="))[-1]) + 1
+
+            # Check halt the process if we're already in page 100
+            if next_page_number > 100:
+                print("The limit of Digikala websit is 100 and exceeded!")
+                return None
+
             next_page_link = (
                 "https://www.digikala.com/search/category-soils-and-fertilizers/?page="
                 + str(next_page_number)
@@ -434,3 +452,26 @@ amount_kg:{kg},
 
         else:
             return None
+
+    async def extract_amount(self, text: str) -> list[tuple[str, str]]:
+
+        # Persian and English digits mapping
+        PERSIAN_DIGITS = "۰۱۲۳۴۵۶۷۸۹"
+        ENGLISH_DIGITS = "0123456789"
+        PERSIAN_TO_ENGLISH = str.maketrans(
+            "".join(PERSIAN_DIGITS), "".join(ENGLISH_DIGITS)
+        )
+
+        # Build regex pattern dynamically
+        unit_pattern = "|".join(UNIT_KEYWORDS)
+        pattern = re.compile(rf"(\d+|[۰-۹]+)\s*({unit_pattern})")
+
+        matches = pattern.findall(text)
+        result = []
+
+        for number, unit in matches:
+            # Convert Persian to English digits
+            normalized_number = number.translate(PERSIAN_TO_ENGLISH)
+            result.append((normalized_number, unit))
+
+        return result

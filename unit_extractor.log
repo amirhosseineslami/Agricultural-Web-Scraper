@@ -171168,3 +171168,602 @@ BrokenPipeError: [WinError 232] The pipe is being closed
 2025-08-18 15:23:31,979 - DEBUG - Extracted 10 لیتر -> 10.0 kg
 2025-08-18 15:23:40,493 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
 2025-08-18 15:23:40,493 - DEBUG - Extracted 15 لیتر -> 15.0 kg
+2025-08-18 15:23:46,961 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:23:46,961 - DEBUG - Extracted 1000 گرم -> 1.000 kg
+2025-08-18 15:23:53,566 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:23:53,566 - DEBUG - Extracted 2 کیلوگرم -> 2.0 kg
+2025-08-18 15:24:00,047 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:00,047 - DEBUG - Extracted 250 میلی لیتر -> 0.250 kg
+2025-08-18 15:24:06,613 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:06,613 - DEBUG - Extracted 10 لیتری -> 10.0 kg
+2025-08-18 15:24:16,099 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:16,099 - DEBUG - Package extracted 300 units -> 0.300 kg
+2025-08-18 15:24:22,612 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:22,612 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:24:28,948 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:28,948 - DEBUG - Extracted 5 لیتر -> 5.0 kg
+2025-08-18 15:24:35,442 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:35,442 - DEBUG - Extracted 7 لیتر -> 7.0 kg
+2025-08-18 15:24:42,195 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:42,195 - WARNING - Unknown unit: K
+2025-08-18 15:24:42,195 - DEBUG - Fallback extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:24:50,690 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:50,690 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 15:24:57,292 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:24:57,292 - DEBUG - Extracted 30 لیتر -> 30.0 kg
+2025-08-18 15:25:03,771 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:03,771 - DEBUG - Extracted 60 لیتر -> 60.0 kg
+2025-08-18 15:25:10,045 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:10,045 - DEBUG - Extracted 12 لیتر -> 12.0 kg
+2025-08-18 15:25:16,723 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'مایع': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'فروت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'ست': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'ویژه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'جنوبگان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'پلاس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'حجم': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'یک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - ERROR - Failed to parse number 'لیتر': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:16,724 - INFO - No amount-unit match found in text: کود مایع فروت ست ویژه جنوبگان مدل پلاس حجم یک لیتر
+2025-08-18 15:25:25,349 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:25,350 - WARNING - Unknown unit: K
+2025-08-18 15:25:25,351 - DEBUG - Fallback extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:25:31,988 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:31,988 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 15:25:38,332 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:38,332 - DEBUG - Extracted 1000 میلی لیتر -> 1.000 kg
+2025-08-18 15:25:44,586 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:44,586 - DEBUG - Extracted 1000 گرم -> 1.000 kg
+2025-08-18 15:25:50,852 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:50,852 - DEBUG - Extracted 5 کیلوگرم -> 5.0 kg
+2025-08-18 15:25:59,038 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'آهن': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'فرومیتو': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'مدل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'FerroMitoFe': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'بسته': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'یک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - ERROR - Failed to parse number 'کیلوگرمی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:25:59,038 - INFO - No amount-unit match found in text: کود آهن فرومیتو مدل FerroMitoFe بسته یک کیلوگرمی
+2025-08-18 15:26:05,392 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:05,392 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 15:26:11,806 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:11,806 - DEBUG - Extracted 50 گرمی -> 0.050 kg
+2025-08-18 15:26:18,197 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:18,197 - DEBUG - Extracted 2 لیتری -> 2.0 kg
+2025-08-18 15:26:25,172 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:25,172 - DEBUG - Extracted 50 لیتر -> 50.0 kg
+2025-08-18 15:26:34,217 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:34,217 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:26:41,099 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:41,099 - WARNING - Unknown unit: T
+2025-08-18 15:26:41,099 - DEBUG - Fallback extracted 150 میلی لیتر -> 0.150 kg
+2025-08-18 15:26:47,950 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:47,950 - DEBUG - Extracted 500 میلی لیتر -> 0.500 kg
+2025-08-18 15:26:55,328 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:26:55,328 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 15:27:02,005 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:02,005 - WARNING - Unknown unit: T
+2025-08-18 15:27:02,005 - DEBUG - Fallback extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:27:11,389 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:11,389 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:27:18,209 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:18,209 - WARNING - Unknown unit: G
+2025-08-18 15:27:18,209 - DEBUG - Fallback extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:27:25,667 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:25,667 - DEBUG - Extracted 1000 میلی لیتر -> 1.000 kg
+2025-08-18 15:27:32,905 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:32,906 - DEBUG - Extracted 5 کیلوگرم -> 5.0 kg
+2025-08-18 15:27:39,309 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:39,309 - DEBUG - Extracted 1000 میلی لیتر -> 1.000 kg
+2025-08-18 15:27:47,882 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:47,882 - DEBUG - Extracted 2 لیتر -> 2.0 kg
+2025-08-18 15:27:54,609 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:27:54,609 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:28:01,178 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:28:01,178 - WARNING - Unknown unit: CC
+2025-08-18 15:28:01,178 - DEBUG - Fallback extracted 2 لیتر -> 2.0 kg
+2025-08-18 15:28:07,974 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:28:07,974 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:28:14,523 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:28:14,523 - DEBUG - Package extracted 20 units -> 0.020 kg
+2025-08-18 15:28:24,101 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:28:24,101 - DEBUG - Extracted 25 گرم -> 0.025 kg
+2025-08-18 15:28:30,722 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:28:30,723 - DEBUG - Extracted 120 میلی لیتر -> 0.120 kg
+2025-08-18 15:28:37,400 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:28:37,400 - DEBUG - Extracted 1 کیلوگرم -> 1.0 kg
+2025-08-18 15:28:52,684 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:29:32,530 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:30:35,351 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:30:39,617 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:30:39,618 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 15:30:39,705 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:30:39,705 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:30:39,705 - INFO - No amount-unit match found in text: کود
+2025-08-18 15:35:56,653 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:36:16,901 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:36:21,581 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,581 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 15:36:21,602 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,603 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,603 - INFO - No amount-unit match found in text: کود
+2025-08-18 15:36:21,611 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,611 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,611 - INFO - No amount-unit match found in text: خاک
+2025-08-18 15:36:21,618 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,619 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:36:21,625 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,626 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,627 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,627 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,627 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,627 - INFO - No amount-unit match found in text: عملکرد اصلی: گل دهی
+2025-08-18 15:36:21,631 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,633 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,633 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,633 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,633 - INFO - No amount-unit match found in text: عملکرد اصلی: تغذیه
+2025-08-18 15:36:21,642 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,642 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,642 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,642 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,642 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,642 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,642 - INFO - No amount-unit match found in text: تهیه شده از مواد ارگانیک
+2025-08-18 15:36:21,645 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,645 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,645 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,645 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,645 - INFO - No amount-unit match found in text: تمامی گیاهان آپارتمانی
+2025-08-18 15:36:21,659 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:21,659 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:21,660 - INFO - No amount-unit match found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 15:36:21,660 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:40,474 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:36:44,237 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,237 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 15:36:44,243 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,243 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,243 - INFO - No amount-unit match found in text: کود
+2025-08-18 15:36:44,255 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,255 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,255 - INFO - No amount-unit match found in text: خاک
+2025-08-18 15:36:44,258 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,259 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:36:44,265 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,266 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,266 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,266 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,266 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,266 - INFO - No amount-unit match found in text: عملکرد اصلی: گل دهی
+2025-08-18 15:36:44,272 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,273 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,273 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,273 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,273 - INFO - No amount-unit match found in text: عملکرد اصلی: تغذیه
+2025-08-18 15:36:44,277 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,277 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,277 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,277 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,277 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,277 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,277 - INFO - No amount-unit match found in text: تهیه شده از مواد ارگانیک
+2025-08-18 15:36:44,285 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,286 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,286 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,286 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,286 - INFO - No amount-unit match found in text: تمامی گیاهان آپارتمانی
+2025-08-18 15:36:44,290 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - INFO - No amount-unit match found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 15:36:44,291 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:36:44,291 - ERROR - Failed to parse number 'sfda': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:36:44,291 - INFO - No amount-unit match found in text: sfda
+2025-08-18 15:39:53,770 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:39:57,179 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,179 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 15:39:57,189 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,189 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,189 - INFO - No amount-unit match found in text: کود
+2025-08-18 15:39:57,194 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,195 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,195 - INFO - No amount-unit match found in text: خاک
+2025-08-18 15:39:57,201 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,206 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:39:57,213 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,213 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,213 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,213 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,213 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,213 - INFO - No amount-unit match found in text: عملکرد اصلی: گل دهی
+2025-08-18 15:39:57,220 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,220 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,220 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,220 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,220 - INFO - No amount-unit match found in text: عملکرد اصلی: تغذیه
+2025-08-18 15:39:57,228 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,229 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,229 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,229 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,229 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,229 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,229 - INFO - No amount-unit match found in text: تهیه شده از مواد ارگانیک
+2025-08-18 15:39:57,233 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,233 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,233 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,233 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,233 - INFO - No amount-unit match found in text: تمامی گیاهان آپارتمانی
+2025-08-18 15:39:57,239 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,244 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,245 - INFO - No amount-unit match found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 15:39:57,245 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:39:57,245 - ERROR - Failed to parse number 'sfda': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:39:57,245 - INFO - No amount-unit match found in text: sfda
+2025-08-18 15:42:14,391 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:43:02,960 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:43:36,289 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:45:19,529 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:50:56,543 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:50:59,992 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:50:59,992 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 15:50:59,992 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:50:59,992 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:50:59,992 - INFO - No amount-unit match found in text: کود
+2025-08-18 15:51:00,004 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,004 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,005 - INFO - No amount-unit match found in text: خاک
+2025-08-18 15:51:00,009 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,009 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:51:00,016 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,017 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,017 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,017 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,018 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,018 - INFO - No amount-unit match found in text: عملکرد اصلی: گل دهی
+2025-08-18 15:51:00,023 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,023 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,023 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,023 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,023 - INFO - No amount-unit match found in text: عملکرد اصلی: تغذیه
+2025-08-18 15:51:00,027 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,027 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,027 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,027 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,027 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,027 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,027 - INFO - No amount-unit match found in text: تهیه شده از مواد ارگانیک
+2025-08-18 15:51:00,028 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,028 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,028 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,028 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,028 - INFO - No amount-unit match found in text: تمامی گیاهان آپارتمانی
+2025-08-18 15:51:00,038 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,038 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:51:00,039 - INFO - No amount-unit match found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 15:52:50,106 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:52:53,556 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,556 - DEBUG - Extracted 20 لیتر -> 20.0 kg
+2025-08-18 15:52:53,566 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,567 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,567 - INFO - No amount-unit match found in text: کود
+2025-08-18 15:52:53,583 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,584 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,584 - INFO - No amount-unit match found in text: خاک
+2025-08-18 15:52:53,625 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,626 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 15:52:53,676 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,677 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,677 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,677 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,677 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,677 - INFO - No amount-unit match found in text: عملکرد اصلی: گل دهی
+2025-08-18 15:52:53,713 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,713 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,713 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,713 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,713 - INFO - No amount-unit match found in text: عملکرد اصلی: تغذیه
+2025-08-18 15:52:53,716 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,716 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,716 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,716 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,716 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,716 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,716 - INFO - No amount-unit match found in text: تهیه شده از مواد ارگانیک
+2025-08-18 15:52:53,725 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,726 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,726 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,726 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,726 - INFO - No amount-unit match found in text: تمامی گیاهان آپارتمانی
+2025-08-18 15:52:53,730 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:52:53,730 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,730 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:52:53,731 - INFO - No amount-unit match found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 15:59:05,985 - DEBUG - Using proactor: IocpProactor
+2025-08-18 15:59:09,156 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,163 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,163 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,163 - INFO - No valid amount-unit pairs found in text: کود
+2025-08-18 15:59:09,183 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,183 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,184 - INFO - No valid amount-unit pairs found in text: خاک
+2025-08-18 15:59:09,199 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,203 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,203 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,203 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,203 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,203 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,203 - INFO - No valid amount-unit pairs found in text: عملکرد اصلی: گل دهی
+2025-08-18 15:59:09,212 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,212 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,212 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,213 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,213 - INFO - No valid amount-unit pairs found in text: عملکرد اصلی: تغذیه
+2025-08-18 15:59:09,221 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,222 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,222 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,222 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,222 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,222 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,222 - INFO - No valid amount-unit pairs found in text: تهیه شده از مواد ارگانیک
+2025-08-18 15:59:09,226 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,226 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,226 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,226 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,226 - INFO - No valid amount-unit pairs found in text: تمامی گیاهان آپارتمانی
+2025-08-18 15:59:09,229 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,229 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,233 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 15:59:09,234 - INFO - No valid amount-unit pairs found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 16:00:24,546 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:00:29,685 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,704 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,704 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,704 - INFO - No valid amount-unit pairs found in text: کود
+2025-08-18 16:00:29,724 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,724 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,724 - INFO - No valid amount-unit pairs found in text: خاک
+2025-08-18 16:00:29,752 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,759 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,759 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,759 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,759 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,759 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,759 - INFO - No valid amount-unit pairs found in text: عملکرد اصلی: گل دهی
+2025-08-18 16:00:29,769 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,769 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,770 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,770 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,770 - INFO - No valid amount-unit pairs found in text: عملکرد اصلی: تغذیه
+2025-08-18 16:00:29,773 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,773 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,773 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,773 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,773 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,773 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,773 - INFO - No valid amount-unit pairs found in text: تهیه شده از مواد ارگانیک
+2025-08-18 16:00:29,776 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,776 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,776 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,776 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,777 - INFO - No valid amount-unit pairs found in text: تمامی گیاهان آپارتمانی
+2025-08-18 16:00:29,783 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:00:29,783 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,784 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,785 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,785 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,785 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,785 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:00:29,785 - INFO - No valid amount-unit pairs found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 16:01:15,334 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:01:19,654 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,687 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,687 - ERROR - Failed to parse number 'کود': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,687 - INFO - No valid amount-unit pairs found in text: کود
+2025-08-18 16:01:19,700 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,700 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,700 - INFO - No valid amount-unit pairs found in text: خاک
+2025-08-18 16:01:19,706 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,722 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,722 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,722 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,722 - ERROR - Failed to parse number 'گل': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,722 - ERROR - Failed to parse number 'دهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,722 - INFO - No valid amount-unit pairs found in text: عملکرد اصلی: گل دهی
+2025-08-18 16:01:19,735 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,735 - ERROR - Failed to parse number 'عملکرد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,735 - ERROR - Failed to parse number 'اصلی:': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,735 - ERROR - Failed to parse number 'تغذیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,735 - INFO - No valid amount-unit pairs found in text: عملکرد اصلی: تغذیه
+2025-08-18 16:01:19,737 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,737 - ERROR - Failed to parse number 'تهیه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,737 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,737 - ERROR - Failed to parse number 'از': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,737 - ERROR - Failed to parse number 'مواد': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,737 - ERROR - Failed to parse number 'ارگانیک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,737 - INFO - No valid amount-unit pairs found in text: تهیه شده از مواد ارگانیک
+2025-08-18 16:01:19,751 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,751 - ERROR - Failed to parse number 'تمامی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,751 - ERROR - Failed to parse number 'گیاهان': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,751 - ERROR - Failed to parse number 'آپارتمانی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,751 - INFO - No valid amount-unit pairs found in text: تمامی گیاهان آپارتمانی
+2025-08-18 16:01:19,756 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:01:19,756 - ERROR - Failed to parse number 'ترکیب': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,756 - ERROR - Failed to parse number 'الیاف': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,756 - ERROR - Failed to parse number 'گیاهی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number '،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'پیت': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'ماس': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'خاک': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'فرآوری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'و': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'سرند': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'شده': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'بدون': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'هیچ': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'گونه': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'ضایعات،': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'حاوی': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'مقداری': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - ERROR - Failed to parse number 'NPK': [<class 'decimal.ConversionSyntax'>]
+2025-08-18 16:01:19,757 - INFO - No valid amount-unit pairs found in text: ترکیب الیاف گیاهی ، پیت ماس و خاک فرآوری شده و سرند شده بدون هیچ گونه ضایعات، حاوی مقداری NPK
+2025-08-18 16:03:16,669 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:03:32,184 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:05:17,574 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:05:45,791 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:06:06,280 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:06:23,646 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:06:26,778 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:06:44,309 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:06:59,034 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:07:40,204 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:07:58,799 - DEBUG - Using proactor: IocpProactor
+2025-08-18 16:08:03,202 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:08:03,202 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:08:03,203 - DEBUG - Attempting to acquire lock 1393668300816 on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:08:03,204 - DEBUG - Lock 1393668300816 acquired on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:08:03,216 - DEBUG - Attempting to release lock 1393668300816 on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:08:03,216 - DEBUG - Lock 1393668300816 released on C:\Users\pc\AppData\Local\Programs\Python\Python311\Lib\site-packages\tldextract\.suffix_cache\publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2025-08-18 16:08:09,692 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:08:09,692 - DEBUG - Extracted 10 کیلوگرم -> 10.0 kg
+2025-08-18 16:08:15,994 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:08:15,994 - DEBUG - Extracted 100 گرم -> 0.100 kg
+2025-08-18 16:08:22,315 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:08:22,315 - WARNING - Unknown unit: K
+2025-08-18 16:08:22,315 - DEBUG - Fallback extracted 300 گرم -> 0.300 kg
+2025-08-18 16:08:28,819 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:08:28,819 - DEBUG - Extracted 5 لیتر -> 5.0 kg
+2025-08-18 16:08:54,558 - DEBUG - UnitExtractor initialized with 85 unit mappings and 3 package patterns
+2025-08-18 16:08:54,558 - DEBUG - Extracted 5 کیلوگرم -> 5.0 kg

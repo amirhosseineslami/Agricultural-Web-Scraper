@@ -19,20 +19,27 @@ async def main():
         page = await browser.new_page()
 
         await SearchInDigikala(page).get_all_prices()
-        # await SearchInDigikood(page).get_all_prices()
-        # await SearchInBasalam(page=page).get_all_prices()
-        # await SearchInKoodforosh(page).get_all_prices()
-        # await SearchInDigikoud(page).get_all_prices()
-        # await SearchInSepahankesht(page=page).get_all_prices()
-        # await SearchInRoyalkesht(page=page).get_all_prices()
-        # await SearchInTorob(page).get_all_prices()
-        # await SearchInAgriplus(page).get_all_prices()
-        # ProcessData().run(
-        #     input_file="output/price_of_fertilizers.xlsx",
-        #     raw_source_file="source/raw_source_of_fertilizer.xlsx",
-        # )
+        await SearchInDigikood(page).get_all_prices()
+        await SearchInBasalam(page=page).get_all_prices()
+        await SearchInKoodforosh(page).get_all_prices()
+        await SearchInDigikoud(page).get_all_prices()
+        await SearchInSepahankesht(page=page).get_all_prices()
+        await SearchInRoyalkesht(page=page).get_all_prices()
+        await SearchInTorob(page).get_all_prices()
+        await SearchInAgriplus(page).get_all_prices()
+        ProcessData().run(
+            input_file="output/price_of_fertilizers.xlsx",
+            raw_source_file="source/raw_source_of_fertilizer.xlsx",
+        )
 
-        input("Finished")
+        # Process is finished
+        print(
+            """
+------------------------------------------------------------------------------------------------------------------------
+                           The webscraping and preprocessing of the data is Finished.
+------------------------------------------------------------------------------------------------------------------------
+              """
+        )
 
 
 asyncio.run(main())

@@ -206,11 +206,11 @@ class SearchInDigikala:
             except TimeoutError:
                 print("Unit per kg not found")
 
+            amount_kg = 0
             for unit_kg_locator in await unit_kg_locator.all():
                 amount_kg_str = await unit_kg_locator.inner_text()
                 print(amount_kg_str)
 
-                amount_kg = 0
                 # get kg from name of the product
                 amount_kg_list: list = await self.extract_amount(amount_kg_str)
                 if len(amount_kg_list) > 0:
