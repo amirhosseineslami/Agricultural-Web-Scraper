@@ -1,4 +1,4 @@
-# Web Scraping Project
+# Agricultural Web Scraper
 
 This project is a **web scraping tool developed for Lotus Futurist**, designed to extract structured data from various online sources, primarily focusing on **e-commerce and agricultural websites**. It leverages **asynchronous programming with Python and Playwright** to efficiently gather, process, and organize information for analysis and reporting.
 
